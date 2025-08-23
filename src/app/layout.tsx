@@ -1,3 +1,4 @@
+import { MainNavigation } from "@/components/main-navigation/main-navigation";
 import { cn } from "@/lib/cn";
 import { notoSans, poppins } from "@/lib/fonts";
 import type { Metadata } from "next";
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(notoSans.variable, poppins.variable)}>
+        <MainNavigation />
         {children}
       </body>
     </html>

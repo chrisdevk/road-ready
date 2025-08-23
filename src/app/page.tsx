@@ -1,13 +1,13 @@
-import { Button } from "@/components/ui/button";
+import { Hero } from "@/app/_components/hero";
+import { HeroCallout } from "@/app/_components/hero-callout";
+import { List } from "@/app/_components/list";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1>Heading</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-      </p>
-      <Button>Button</Button>
-    </div>
+    <>
+      <Hero />
+      <HeroCallout />
+      <List />
+    </>
   );
 }
