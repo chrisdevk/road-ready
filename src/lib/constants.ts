@@ -94,3 +94,111 @@ export const scrollListItems = [
     value: "Night Driving (upon request)",
   },
 ];
+
+export const listCardItems = [
+  {
+    label: "Pickup, drop-off across Las Vegas",
+    icon: "MapPin",
+  },
+  {
+    label: "DMV-certified instructors",
+    icon: "IdCard",
+  },
+  {
+    label: "Dual-control safety vehicles",
+    icon: "LockKeyhole",
+  },
+  {
+    label: "Personalized recommendations",
+    icon: "ClipboardPenLine",
+  },
+  {
+    label: "No hidden fees",
+    icon: "Ban",
+  },
+];
+
+export const trialACcordionItems = [
+  {
+    question: "What is a trial lesson?",
+    answer:
+      "An introductory lesson is the perfect way to experience our teaching style with no pressure. It’s a 90 minute hands-on-session that helps you:",
+    list: [
+      {
+        key: "li1",
+        value: "Get comfortable and confident behind the wheel",
+      },
+      {
+        key: "li2",
+        value: "Understand what to expect in future lessons",
+      },
+      {
+        key: "li3",
+        value: "Ask questions and receive a tailored plan toward licensing",
+      },
+    ],
+  },
+  {
+    question: "Why Start With a Trial?",
+    answer:
+      "Your first time behind the wheel sets the foundation for your entire learning journey. From lesson one, we focus on trust, confidence, and clarity. <br />After your introductory session, you will have:",
+    list: [
+      {
+        key: "li1",
+        value: "A clear understanding of your current driving level",
+      },
+      {
+        key: "li2",
+        value: "The confidence of zero pressure and full support",
+      },
+      {
+        key: "li3",
+        value: "A tailored training plan for your next steps",
+      },
+    ],
+  },
+  {
+    question: "What’s Included?",
+    answer: null,
+    list: [
+      {
+        key: "li1",
+        value: "A full 90 minutes of private instruction",
+      },
+      {
+        key: "l2",
+        value: "Convenient pickup and drop-off across Las Vegas",
+      },
+      {
+        key: "l3",
+        value: "Gentle introduction to the basics of safe driving",
+      },
+      {
+        key: "l4",
+        value: "Supportive feedback and a clear plan for your next steps",
+      },
+    ],
+  },
+  {
+    question: "Who is it for?",
+    answer: null,
+    list: [
+      {
+        key: "li1",
+        value: "Teen Drivers just getting started",
+      },
+      {
+        key: "li2",
+        value: "Adult Beginners looking for confidence",
+      },
+      {
+        key: "li3",
+        value: "International Drivers adjusting to U.S. rules",
+      },
+      {
+        key: "li4",
+        value: "Anyone who wants to test the waters before committing",
+      },
+    ],
+  },
+];

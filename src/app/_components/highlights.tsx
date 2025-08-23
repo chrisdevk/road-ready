@@ -1,10 +1,11 @@
 import { HighlightStack } from "@/app/_components/highlight-stack";
+import { Container } from "@/components/ui/container";
 import { ScrollList } from "./scroll-list";
 
 export const Highlights = () => {
   return (
     <article className="bg-black mt-40 py-20 text-white">
-      <section className="flex flex-col gap-y-10 max-w-[1256px] w-full mx-auto px-4">
+      <Container className="flex flex-col gap-y-10" as="section">
         <div className="flex flex-col items-center gap-y-4 text-center">
           <h2>
             What Will You Learn During Behind-
@@ -18,10 +19,10 @@ export const Highlights = () => {
           </p>
         </div>
         <HighlightStack />
-      </section>
-      <section className="max-w-[1256px] w-full mx-auto px-4 mt-40">
-        <ScrollList />
-      </section>
+        <Container as="section" className="mt-40">
+          <ScrollList />
+        </Container>
+      </Container>
     </article>
   );
 };

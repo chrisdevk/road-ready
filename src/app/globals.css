@@ -133,7 +133,7 @@
   }
 
   h3 {
-    @apply text-xl lg:text-xl font-semibold font-poppins;
+    @apply text-xl font-semibold font-poppins;
   }
 
   h4 {
