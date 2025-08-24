@@ -5,13 +5,17 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/cn";
-import { trialACcordionItems } from "@/lib/constants";
+import { trialAccordionItems } from "@/lib/constants";
 import { Check } from "lucide-react";
 
 export const TrialAccordion = () => {
   return (
-    <Accordion type="single" collapsible className="col-span-2 md:col-span-1">
-      {trialACcordionItems.map((item) => (
+    <Accordion
+      type="single"
+      defaultValue={trialAccordionItems[0].question}
+      className="col-span-2 md:col-span-1"
+    >
+      {trialAccordionItems.map((item) => (
         <AccordionItem value={item.question} key={item.question}>
           <AccordionTrigger>
             <h3>{item.question}</h3>

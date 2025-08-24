@@ -30,7 +30,7 @@ export const List = () => {
           imageAlt="Why Choose RoadReady Driving School?"
           imagePosition="right"
           imageClasses="rounded-br-2xl rounded-tl-2xl object-cover z-10 ml-4 mt-4"
-          overlayClasses="absolute left-0 top-0 size-full bg-amber-100/60 rounded-2xl"
+          overlayClasses="absolute left-0 top-0 size-full bg-sand rounded-2xl"
           iconMap={iconMap}
         />
         <ListSection
@@ -39,7 +39,7 @@ export const List = () => {
           imageAlt="Driving lesson"
           imagePosition="left"
           imageClasses="rounded-br-2xl rounded-tr-2xl object-cover z-10 -ml-4 mt-4"
-          overlayClasses="absolute right-0 top-0 size-full bg-amber-100/60 rounded-2xl"
+          overlayClasses="absolute right-0 top-0 size-full bg-sand rounded-2xl"
           iconMap={iconMap}
         />
       </Container>

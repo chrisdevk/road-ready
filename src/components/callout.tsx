@@ -8,7 +8,7 @@ interface CalloutProps {
   subheading?: string;
   buttonText: string;
   buttonLink: string;
-  color: "primary" | "yellow";
+  color: "primary" | "sand";
 }
 
 export const Callout = ({
@@ -21,7 +21,7 @@ export const Callout = ({
   return (
     <section
       className={cn(
-        color === "yellow" && "bg-yellow text-black",
+        color === "sand" && "bg-sand text-black",
         color === "primary" && "bg-primary text-white"
       )}
     >
