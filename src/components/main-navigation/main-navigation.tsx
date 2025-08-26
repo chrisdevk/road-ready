@@ -3,33 +3,11 @@
 import { Hamburger } from "@/components/main-navigation/hamburger";
 import { Menu } from "@/components/main-navigation/menu";
 import { cn } from "@/lib/cn";
+import { navLinks } from "@/lib/constants";
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
-const navLinks = [
-  {
-    label: "Home",
-    href: "/",
-  },
-  {
-    label: "Packages",
-    href: "/packages",
-  },
-  {
-    label: "Drive Test",
-    href: "/drive-test",
-  },
-  {
-    label: "Contact",
-    href: "/contact",
-  },
-  {
-    label: "FAQ",
-    href: "/faq",
-  },
-];
 
 export const MainNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,3 +1,4 @@
+import { Footer } from "@/components/footer";
 import { MainNavigation } from "@/components/main-navigation/main-navigation";
 import { cn } from "@/lib/cn";
 import { notoSans, poppins } from "@/lib/fonts";
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={cn(notoSans.variable, poppins.variable)}>
         <MainNavigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

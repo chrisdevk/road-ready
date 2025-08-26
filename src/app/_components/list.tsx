@@ -1,3 +1,4 @@
+import { Container } from "@/components/ui/container";
 import { listItems } from "@/lib/constants";
 import {
   CircleCheckBig,
@@ -7,7 +8,7 @@ import {
   House,
   Scale,
 } from "lucide-react";
-import Image from "next/image";
+import { ListSection } from "./list-section";
 
 const iconMap = {
   House,
@@ -19,69 +20,29 @@ const iconMap = {
 } as const;
 
 export const List = () => {
-  const getIcon = (icon: string) => {
-    return iconMap[icon as keyof typeof iconMap];
-  };
-
   return (
-    <article className="space-y-10 max-w-[1256px] w-full mx-auto px-4 mt-28">
-      <h2>Why Choose RoadReady Driving School?</h2>
-      <section className="grid grid-cols-12 gap-x-12">
-        <ul className="flex flex-col gap-10 col-span-12 md:col-span-7">
-          {listItems.slice(0, 3).map((item) => {
-            const Icon = getIcon(item.icon);
-            return (
-              <li className="flex gap-x-6">
-                <div className="flex flex-col items-center gap-y-5">
-                  <Icon className="size-10" />
-                  <div className="w-px h-full bg-neutral-500" />
-                </div>
-                <div className="flex flex-col gap-y-2">
-                  <h3>{item.heading}</h3>
-                  <p>{item.subheading}</p>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
-        <div className="col-span-5 relative overflow-hidden rounded-2xl">
-          <Image
-            src="/images/la-palms.jpg"
-            alt="Why Choose RoadReady Driving School?"
-            fill
-            className="rounded-br-2xl rounded-tl-2xl object-cover z-10 ml-4 mt-4"
-          />
-          <div className="absolute left-0 top-0 size-full bg-amber-100/60 rounded-2xl" />
-        </div>
-      </section>
-      <section className="grid grid-cols-12 gap-x-12 mt-24">
-        <ul className="flex flex-col gap-10 col-span-12 md:col-span-7 order-2">
-          {listItems.slice(3, 6).map((item) => {
-            const Icon = getIcon(item.icon);
-            return (
-              <li className="flex gap-x-6">
-                <div className="flex flex-col items-center gap-y-5">
-                  <Icon className="size-10" />
-                  <div className="w-px h-full bg-neutral-500" />
-                </div>
-                <div className="flex flex-col gap-y-2">
-                  <h3>{item.heading}</h3>
-                  <p>{item.subheading}</p>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
-        <div className="col-span-5 relative overflow-hidden order-1 rounded-2xl">
-          <Image
-            src="/images/hands-on-wheel.jpg"
-            alt="Driving lesson"
-            fill
-            className="rounded-br-2xl rounded-tr-2xl object-cover z-10 -ml-4 mt-4"
-          />
-          <div className="absolute right-0 top-0 size-full bg-amber-100/60 rounded-2xl" />
-        </div>
-      </section>
+    <article className="mt-28">
+      <Container>
+        <h2>Why Choose RoadReady Driving School?</h2>
+        <ListSection
+          items={listItems.slice(0, 3)}
+          imageSrc="/images/la-palms.jpg"
+          imageAlt="Why Choose RoadReady Driving School?"
+          imagePosition="right"
+          imageClasses="rounded-br-2xl rounded-tl-2xl object-cover z-10 ml-4 mt-4"
+          overlayClasses="absolute left-0 top-0 size-full bg-sand rounded-2xl"
+          iconMap={iconMap}
+        />
+        <ListSection
+          items={listItems.slice(3, 6)}
+          imageSrc="/images/hands-on-wheel.jpg"
+          imageAlt="Driving lesson"
+          imagePosition="left"
+          imageClasses="rounded-br-2xl rounded-tr-2xl object-cover z-10 -ml-4 mt-4"
+          overlayClasses="absolute right-0 top-0 size-full bg-sand rounded-2xl"
+          iconMap={iconMap}
+        />
+      </Container>
     </article>
   );
 };
