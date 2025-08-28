@@ -1,12 +1,10 @@
 "use client";
-import React from "react";
 import {
   Accordion,
+  AccordionContent,
   AccordionItem,
   AccordionTrigger,
-  AccordionContent,
 } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
 
 const items = [
   {
