@@ -41,8 +41,8 @@ export const ScrollList = () => {
   }, [isVisible, controls]);
 
   return (
-    <div className="grid grid-cols-12 gap-x-24">
-      <div className="flex flex-col gap-y-6 col-span-12 md:col-span-6">
+    <div className="grid grid-cols-12 md:gap-x-24 space-y-10">
+      <div className="flex flex-col items-center md:items-start text-center md:text-left gap-y-6 col-span-12 md:col-span-6">
         <h2>Step by step, you'll build Essential Driving Skills</h2>
         <p>
           Each skill is introduced when you're ready. No pressure, just progress
@@ -53,7 +53,7 @@ export const ScrollList = () => {
       {/* Auto-scroll container */}
       <div
         ref={containerRef}
-        className="col-span-5 h-[500px] overflow-hidden relative bg-white p-6 max-h-[210px]"
+        className="col-span-12 md:col-span-5 h-[500px] overflow-hidden relative bg-white p-6 max-h-[210px]"
       >
         <motion.div
           className="scroll-content space-y-4"

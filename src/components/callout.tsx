@@ -25,7 +25,7 @@ export const Callout = ({
         color === "primary" && "bg-primary text-white"
       )}
     >
-      <Container className="space-y-7 flex flex-col items-center justify-center text-center py-20 mt-40">
+      <Container className="space-y-7 flex flex-col items-center justify-center text-center py-20 mt-20 md:mt-40">
         <h2>{heading}</h2>
         {!!subheading && <p>{subheading}</p>}
         <Button asChild variant={color === "primary" ? "secondary" : "default"}>

@@ -233,14 +233,14 @@ export const locationListItems = [
     icon: "LandPlot",
   },
   {
-    label: "Address",
-    value: "5215 South Durango Drive Unit 2 Las Vegas Nevada 89113",
-    icon: "MapPin",
+    label: "Driving Lessons",
+    value: "7 Days a Week, 9:00 AM – 9:00 PM",
+    icon: "Calendar",
   },
   {
-    label: "Office Hours",
-    value: "Monday – Friday: 9:00 AM – 4:00 PM",
-    icon: "Clock",
+    label: "Address",
+    value: "5215 South Durango Drive Unit 2 <br /> Las Vegas Nevada 89113",
+    icon: "MapPin",
   },
   {
     label: "DMV Test Areas Covered",
@@ -253,9 +253,9 @@ export const locationListItems = [
     icon: "Phone",
   },
   {
-    label: "Driving Lessons",
-    value: "7 Days a Week, 9:00 AM – 9:00 PM",
-    icon: "Calendar",
+    label: "Office Hours",
+    value: "Monday – Friday: 9:00 AM – 4:00 PM <br /> Only by appointment",
+    icon: "Clock",
   },
 ];
 

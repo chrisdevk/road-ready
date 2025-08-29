@@ -8,9 +8,9 @@ export const Footer = () => {
   const date = new Date();
   return (
     <footer className="bg-black py-18">
-      <Container className="flex justify-between">
+      <Container className="flex flex-col gap-y-8 md:flex-row justify-between">
         <div className="flex flex-col gap-y-24">
-          <div className="flex flex-col gap-y-8">
+          <div className="flex flex-row md:flex-col justify-between md:justify-start gap-x-8 md:gap-y-8">
             <Image
               src="/svg/logo-white.svg"
               alt="RoadReady"
@@ -35,7 +35,7 @@ export const Footer = () => {
               </a>
             </div>
           </div>
-          <p className="text-white">
+          <p className="text-white hidden md:block">
             Copyright © {date.getFullYear()} Road Ready Driving School
           </p>
         </div>
@@ -73,6 +73,10 @@ export const Footer = () => {
             </li>
           </ul>
         </div>
+        <p className="text-white text-center block md:hidden">
+          Copyright © {date.getFullYear()}. All rights reserved. Road Ready
+          Driving School
+        </p>
       </Container>
     </footer>
   );

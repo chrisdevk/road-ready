@@ -31,6 +31,7 @@ export const List = () => {
           imagePosition="right"
           imageClasses="rounded-br-2xl rounded-tl-2xl object-cover z-10 ml-4 mt-4"
           overlayClasses="absolute left-0 top-0 size-full bg-sand rounded-2xl"
+          containerClasses="hidden md:block"
           iconMap={iconMap}
         />
         <ListSection
@@ -40,6 +41,17 @@ export const List = () => {
           imagePosition="left"
           imageClasses="rounded-br-2xl rounded-tr-2xl object-cover z-10 -ml-4 mt-4"
           overlayClasses="absolute right-0 top-0 size-full bg-sand rounded-2xl"
+          containerClasses="hidden md:block"
+          iconMap={iconMap}
+        />
+        <ListSection
+          items={listItems}
+          imageSrc="/images/hands-on-wheel.jpg"
+          imageAlt="Driving lesson"
+          imagePosition="right"
+          imageClasses="rounded-br-2xl rounded-tl-2xl object-cover z-10 ml-4 mt-4"
+          overlayClasses="absolute left-0 top-0 size-full bg-sand rounded-2xl"
+          containerClasses="md:hidden"
           iconMap={iconMap}
         />
       </Container>

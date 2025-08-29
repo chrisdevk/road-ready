@@ -15,7 +15,7 @@ export const LocationList = () => {
     return iconMap[icon as keyof typeof iconMap];
   };
   return (
-    <ul className="grid grid-cols-9 gap-y-10 gap-x-28">
+    <ul className="grid grid-cols-9 gap-y-10 md:gap-x-28">
       {locationListItems.map((item) => {
         const Icon = getIcon(item.icon);
         return (
@@ -26,7 +26,7 @@ export const LocationList = () => {
             <Icon size={24} />
             <div className="flex flex-col">
               <h4>{item.label}</h4>
-              <span>{item.value}</span>
+              <span dangerouslySetInnerHTML={{ __html: item.value }} />
             </div>
           </li>
         );

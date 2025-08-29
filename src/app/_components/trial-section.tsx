@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const TrialSection = () => {
   return (
-    <article className="mt-40 space-y-20">
+    <article className="mt-20 md:mt-40 space-y-20">
       <Container as="section" className="text-center space-y-9">
         <div className="flex flex-col gap-y-5">
           <h2>Try Before You Commit</h2>

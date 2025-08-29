@@ -11,6 +11,7 @@ interface ListSectionProps {
   imageClasses: string;
   overlayClasses: string;
   iconMap: Record<string, React.ElementType>;
+  containerClasses?: string;
 }
 
 export const ListSection = ({
@@ -21,11 +22,13 @@ export const ListSection = ({
   imageClasses,
   overlayClasses,
   iconMap,
+  containerClasses,
 }: ListSectionProps) => {
   return (
     <section
       className={cn(
-        "grid grid-cols-12 gap-x-12 mt-10",
+        "grid grid-cols-12 gap-y-10 md:gap-x-12 mt-10",
+        containerClasses,
         imagePosition === "left" && "mt-24"
       )}
     >
@@ -41,7 +44,7 @@ export const ListSection = ({
       </ul>
       <div
         className={cn(
-          "col-span-5 relative overflow-hidden rounded-2xl",
+          "col-span-12 md:col-span-5 h-[340px] md:h-auto relative overflow-hidden rounded-2xl",
           imagePosition === "left" && "order-1"
         )}
       >
