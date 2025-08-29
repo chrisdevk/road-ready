@@ -27,7 +27,7 @@ export const ListSection = ({
   return (
     <section
       className={cn(
-        "grid grid-cols-12 gap-y-10 md:gap-x-12 mt-10",
+        "grid-cols-12 gap-y-10 md:gap-x-12 mt-10",
         containerClasses,
         imagePosition === "left" && "mt-24"
       )}

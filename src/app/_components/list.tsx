@@ -31,7 +31,7 @@ export const List = () => {
           imagePosition="right"
           imageClasses="rounded-br-2xl rounded-tl-2xl object-cover z-10 ml-4 mt-4"
           overlayClasses="absolute left-0 top-0 size-full bg-sand rounded-2xl"
-          containerClasses="hidden md:block"
+          containerClasses="hidden md:grid"
           iconMap={iconMap}
         />
         <ListSection
@@ -41,7 +41,7 @@ export const List = () => {
           imagePosition="left"
           imageClasses="rounded-br-2xl rounded-tr-2xl object-cover z-10 -ml-4 mt-4"
           overlayClasses="absolute right-0 top-0 size-full bg-sand rounded-2xl"
-          containerClasses="hidden md:block"
+          containerClasses="hidden md:grid"
           iconMap={iconMap}
         />
         <ListSection
@@ -51,7 +51,7 @@ export const List = () => {
           imagePosition="right"
           imageClasses="rounded-br-2xl rounded-tl-2xl object-cover z-10 ml-4 mt-4"
           overlayClasses="absolute left-0 top-0 size-full bg-sand rounded-2xl"
-          containerClasses="md:hidden"
+          containerClasses="grid md:hidden"
           iconMap={iconMap}
         />
       </Container>

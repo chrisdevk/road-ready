@@ -14,7 +14,7 @@ export const HighlightStack = () => {
     return iconMap[icon as keyof typeof iconMap];
   };
   return (
-    <div className="grid grid-cols-4 gap-5 p-5 md:py-10 bg-gray rounded-2xl">
+    <div className="grid grid-cols-4 gap-5 p-5 md:py-10 bg-gray rounded-2xl mt-10">
       {highlights.map((highlight, i) => {
         const Icon = getIcon(highlight.icon);
         return (
