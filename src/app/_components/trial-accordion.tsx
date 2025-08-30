@@ -7,6 +7,7 @@ import {
 import { cn } from "@/lib/cn";
 import { trialAccordionItems } from "@/lib/constants";
 import { Check } from "lucide-react";
+import Image from "next/image";
 
 export const TrialAccordion = () => {
   return (
@@ -23,9 +24,11 @@ export const TrialAccordion = () => {
           <AccordionContent
             className={cn(item.list && item.answer && "space-y-6")}
           >
-            <p>{item.answer}</p>
+            {!!item.answer && (
+              <p dangerouslySetInnerHTML={{ __html: item.answer }} />
+            )}
             {item.list && (
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-neutral-600">
                 {item.list.map((item) => (
                   <li
                     key={item.key}
@@ -37,6 +40,14 @@ export const TrialAccordion = () => {
                 ))}
               </ul>
             )}
+            <div className="relative bg-primary h-[260px] md:h-full md:hidden overflow-hidden rounded-2xl">
+              <Image
+                src="/images/trial-lesson.jpg"
+                alt="Trial lesson"
+                fill
+                className="rounded-2xl object-cover mt-4 ml-4"
+              />
+            </div>
           </AccordionContent>
         </AccordionItem>
       ))}

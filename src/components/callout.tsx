@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { cn } from "@/lib/cn";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 interface CalloutProps {
@@ -25,11 +26,19 @@ export const Callout = ({
         color === "primary" && "bg-primary text-white"
       )}
     >
-      <Container className="space-y-7 flex flex-col items-center justify-center text-center py-20 mt-20 md:mt-40">
-        <h2>{heading}</h2>
+      <Container
+        className={cn(
+          "space-y-7 flex flex-col items-center justify-center text-center py-20 mt-20 md:mt-40",
+          { ["space-y-5"]: !!subheading }
+        )}
+      >
+        <h2 dangerouslySetInnerHTML={{ __html: heading }} />
         {!!subheading && <p>{subheading}</p>}
         <Button asChild variant={color === "primary" ? "secondary" : "default"}>
-          <Link href={buttonLink}>{buttonText}</Link>
+          <Link href={buttonLink}>
+            {buttonText}
+            <ArrowUpRight />
+          </Link>
         </Button>
       </Container>
     </section>

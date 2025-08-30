@@ -20,8 +20,9 @@ export const Hero = () => {
         transition={{ duration: 0.9, delay: 0.3 }}
       >
         Las Vegas Driving School <br />
-        Our DMV-certified instructors help you become a skilled and responsible
-        driver by <br /> offering tailored behind-the-wheel lessons
+        Our DMV-certified instructors help you become a skilled and
+        <br />
+        responsible driver by offering tailored behind-the-wheel lessons
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 40 }}

@@ -69,7 +69,7 @@ export const highlights = [
   {
     heading: "Reacting Calmly",
     subheading: "Managing unexpected situations with confidence",
-    icon: "CircleMinus",
+    icon: "road-sign",
   },
   {
     heading: "Safe Following Distance",
@@ -233,24 +233,24 @@ export const locationListItems = [
     icon: "LandPlot",
   },
   {
-    label: "Driving Lessons",
-    value: "7 Days a Week, 9:00 AM – 9:00 PM",
-    icon: "Calendar",
-  },
-  {
-    label: "Address",
-    value: "5215 South Durango Drive Unit 2 <br /> Las Vegas Nevada 89113",
-    icon: "MapPin",
-  },
-  {
     label: "DMV Test Areas Covered",
     value: "Flamingo | Sahara | Decatur | Henderson",
     icon: "Map",
   },
   {
+    label: "Driving Lessons Hours",
+    value: "7 Days a Week, 9:00 AM – 9:00 PM",
+    icon: "Calendar",
+  },
+  {
     label: "Contact Us",
     value: "Call or Text: (702) 747-5998",
     icon: "Phone",
+  },
+  {
+    label: "Address",
+    value: "5215 South Durango Drive Unit 2 <br /> Las Vegas Nevada 89113",
+    icon: "MapPin",
   },
   {
     label: "Office Hours",

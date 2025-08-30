@@ -1,10 +1,10 @@
 import { highlights } from "@/lib/constants";
-import { CircleMinus, OctagonAlert, SquareArrowUp } from "lucide-react";
+import { OctagonAlert, SquareArrowUp } from "lucide-react";
 import Image from "next/image";
 
 const iconMap = {
   warning: "/svg/warning.svg",
-  CircleMinus,
+  "road-sign": "/svg/road-sign.svg",
   SquareArrowUp,
   OctagonAlert,
 } as const;

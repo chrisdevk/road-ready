@@ -36,21 +36,25 @@ export const Footer = () => {
             </div>
           </div>
           <p className="text-white hidden md:block">
-            Copyright © {date.getFullYear()} Road Ready Driving School
+            Copyright © {date.getFullYear()}. All rights reserved. Road Ready
+            Driving School
           </p>
         </div>
         <div className="flex gap-x-28">
           <ul className="flex flex-col gap-y-4 text-white">
-            {navLinks.map((link) => (
-              <li key={link.label}>
-                <Link
-                  href={link.href}
-                  className="transition-colors hover:text-primary"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
+            {navLinks.map(
+              (link, i) =>
+                i !== navLinks.length - 1 && (
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      className="transition-colors hover:text-primary"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                )
+            )}
           </ul>
           <ul className="flex flex-col gap-y-4 text-white">
             <li>

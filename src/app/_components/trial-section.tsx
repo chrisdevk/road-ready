@@ -17,7 +17,7 @@ export const TrialSection = () => {
           </p>
         </div>
         <Button>
-          Trial Lesson 99$ <ArrowUpRight />
+          Trial Lesson $99 <ArrowUpRight />
         </Button>
       </Container>
       <Container as="section" className="grid grid-cols-2 gap-x-13">

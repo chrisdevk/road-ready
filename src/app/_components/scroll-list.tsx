@@ -42,7 +42,7 @@ export const ScrollList = () => {
 
   return (
     <div className="grid grid-cols-12 md:gap-x-24 space-y-10 mt-20 md:mt-40">
-      <div className="flex flex-col items-center md:items-start text-center md:text-left gap-y-6 col-span-12 md:col-span-6">
+      <div className="flex flex-col items-center md:items-start text-center md:text-left gap-y-6 col-span-12 md:col-span-6 md:my-auto">
         <h2>Step by step, you'll build Essential Driving Skills</h2>
         <p>
           Each skill is introduced when you're ready. No pressure, just progress

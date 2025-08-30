@@ -26,7 +26,7 @@ export const ListCard = () => {
             src="/images/person-driving.jpg"
             alt="Person driving"
             fill
-            className="rounded-t-2xl md:rounded-l-2xl object-cover"
+            className="rounded-t-2xl md:rounded-t-none md:rounded-l-2xl object-cover"
           />
         </div>
         <div className="flex flex-col gap-y-10 px-5 py-8 md:p-8 md:pt-8 md:pl-10 col-span-12 md:col-span-5 text-white">

@@ -17,7 +17,7 @@ export const ListItem = ({
   return (
     <li key={heading} className="flex gap-x-6">
       <div className="flex flex-col items-center gap-y-5">
-        <Icon className="size-10" />
+        <Icon className="min-w-6 min-h-6" />
         <div className="w-px h-full bg-neutral-500" />
       </div>
       <div className="flex flex-col gap-y-2">
