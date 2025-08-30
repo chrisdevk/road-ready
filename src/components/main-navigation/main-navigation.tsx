@@ -61,7 +61,7 @@ export const MainNavigation = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 left-0 w-full h-full bg-black/50 backdrop-blur-lg rounded-b-2xl z-40"
+            className="fixed top-0 left-0 w-full h-full bg-black/50 backdrop-blur-lg rounded-b-2xl z-40 overflow-hidden"
           >
             <Menu links={navLinks} />
           </motion.div>
