@@ -12,8 +12,9 @@ export const TrialSection = () => {
           <h2>Try Before You Commit</h2>
           <p>
             Your first lesson sets the tone for your entire driving experience.
-            With our trial lesson, you’ll gain the <br /> confidence, support,
-            and direction you need to move forward with ease
+            With our trial lesson, you’ll gain the{" "}
+            <br className="hidden md:block" /> confidence, support, and
+            direction you need to move forward with ease
           </p>
         </div>
         <Button>

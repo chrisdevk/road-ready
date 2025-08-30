@@ -18,7 +18,7 @@ export default function Home() {
       <ListCard />
       <TrialSection />
       <Callout
-        heading="Private, one-to-one Behind-The-Wheel Lessons are available <br /> 7 days a week"
+        heading="Behind-The-Wheel Lessons are available <br className='hidden md:block' /> 7 days a week"
         buttonText="Choose Plan"
         buttonLink="/packages"
         color="primary"

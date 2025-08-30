@@ -9,7 +9,7 @@ export const Highlights = () => {
         <div className="flex flex-col items-center gap-y-4 text-center">
           <h2>
             What Will You Learn During Behind-
-            <br />
+            <br className="hidden md:block" />
             The-Wheel Lessons?
           </h2>
           <p className="text-center text-lg">
