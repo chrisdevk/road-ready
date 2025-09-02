@@ -1,0 +1,58 @@
+{
+  "packages": [
+    {
+      "name": "Solo Spin",
+      "duration": "1 Lesson - 2 Hours",
+      "description": "Pay for this one lesson",
+      "price": 140,
+      "fullPrice": null,
+      "savings": null,
+      "highlight": null
+    },
+    {
+      "name": "Duo Spin",
+      "duration": "2 Lessons - 4 Hours",
+      "description": "Pay for two lessons to receive a discount. You save $20",
+      "price": 260,
+      "fullPrice": 280,
+      "savings": 20,
+      "highlight": null
+    },
+    {
+      "name": "Starter Pack",
+      "duration": "3 Lessons - 6 Hours",
+      "description": "Pay for three lessons to receive a discount. You save $45",
+      "price": 375,
+      "fullPrice": 420,
+      "savings": 45,
+      "highlight": null
+    },
+    {
+      "name": "Explorer Pack",
+      "duration": "5 Lessons - 10 Hours",
+      "description": "Pay for five lessons to receive a discount. You save $110",
+      "price": 590,
+      "fullPrice": 700,
+      "savings": 110,
+      "highlight": "Most Popular"
+    },
+    {
+      "name": "Wheel Deal",
+      "duration": "10 Lessons - 20 Hours",
+      "description": "Pay for ten lessons to receive a discount. You save $250",
+      "price": 1150,
+      "fullPrice": 1400,
+      "savings": 250,
+      "highlight": "Smart Choice"
+    },
+    {
+      "name": "Road Warrior",
+      "duration": "25 Lessons - 50 Hours",
+      "description": "Pay for twenty five lessons to receive a discount. You save $1,010",
+      "price": 2490,
+      "fullPrice": 3500,
+      "savings": 1010,
+      "highlight": null
+    }
+  ]
+}
