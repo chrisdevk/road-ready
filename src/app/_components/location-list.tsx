@@ -1,4 +1,3 @@
-import { locationListItems } from "@/lib/constants";
 import { Calendar, Clock, LandPlot, Map, MapPin, Phone } from "lucide-react";
 
 const iconMap = {
@@ -10,7 +9,15 @@ const iconMap = {
   Calendar,
 } as const;
 
-export const LocationList = () => {
+interface LocationListProps {
+  locationListItems: {
+    label: string;
+    value: string;
+    icon: string;
+  }[];
+}
+
+export const LocationList = ({ locationListItems }: LocationListProps) => {
   const getIcon = (icon: string) => {
     return iconMap[icon as keyof typeof iconMap];
   };

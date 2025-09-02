@@ -1,5 +1,4 @@
 import { Container } from "@/components/ui/container";
-import { listItems } from "@/lib/constants";
 import {
   CircleCheckBig,
   FileBadge,
@@ -19,7 +18,15 @@ const iconMap = {
   Scale,
 } as const;
 
-export const List = () => {
+interface ListProps {
+  listItems: {
+    heading: string;
+    subheading: string;
+    icon: string;
+  }[];
+}
+
+export const List = ({ listItems }: ListProps) => {
   return (
     <article className="mt-28">
       <Container>

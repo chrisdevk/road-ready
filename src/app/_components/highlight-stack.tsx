@@ -1,4 +1,3 @@
-import { highlights } from "@/lib/constants";
 import { OctagonAlert, SquareArrowUp } from "lucide-react";
 import Image from "next/image";
 
@@ -9,7 +8,15 @@ const iconMap = {
   OctagonAlert,
 } as const;
 
-export const HighlightStack = () => {
+interface HighlightStackProps {
+  highlights: {
+    heading: string;
+    subheading: string;
+    icon: string;
+  }[];
+}
+
+export const HighlightStack = ({ highlights }: HighlightStackProps) => {
   const getIcon = (icon: string) => {
     return iconMap[icon as keyof typeof iconMap];
   };

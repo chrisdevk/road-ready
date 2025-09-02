@@ -1,11 +1,17 @@
 "use client";
 
-import { scrollListItems } from "@/lib/constants";
 import { CircleCheck } from "lucide-react";
 import { motion, useAnimation } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
-export const ScrollList = () => {
+interface ScrollListProps {
+  scrollListItems: {
+    key: string;
+    value: string;
+  }[];
+}
+
+export const ScrollList = ({ scrollListItems }: ScrollListProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const controls = useAnimation();
   const [isVisible, setIsVisible] = useState(false);

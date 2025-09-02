@@ -5,10 +5,19 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { testimonials } from "@/lib/constants";
 import Image from "next/image";
 
-export const TestimonialCarousel = () => {
+interface TestimonialCarouselProps {
+  testimonials: {
+    name: string;
+    quote: string;
+    image: string;
+  }[];
+}
+
+export const TestimonialCarousel = ({
+  testimonials,
+}: TestimonialCarouselProps) => {
   return (
     <Carousel className="space-y-8">
       <CarouselContent>

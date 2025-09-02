@@ -1,7 +1,15 @@
 import { Container } from "@/components/ui/container";
 import { LocationList } from "./location-list";
 
-export const Location = () => {
+interface LocationProps {
+  locationListItems: {
+    label: string;
+    value: string;
+    icon: string;
+  }[];
+}
+
+export const Location = ({ locationListItems }: LocationProps) => {
   return (
     <Container
       as="section"
@@ -16,7 +24,7 @@ export const Location = () => {
         referrerPolicy="no-referrer-when-downgrade"
         className="w-full rounded-2xl h-52 md:h-[370px]"
       ></iframe>
-      <LocationList />
+      <LocationList locationListItems={locationListItems} />
     </Container>
   );
 };

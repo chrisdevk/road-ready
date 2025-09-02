@@ -1,4 +1,3 @@
-import { listCardItems } from "@/lib/constants";
 import {
   Ban,
   ClipboardPenLine,
@@ -17,7 +16,14 @@ const iconMap = {
   Ban,
 } as const;
 
-export const ListCard = () => {
+interface ListCardProps {
+  listCardItems: {
+    label: string;
+    icon: string;
+  }[];
+}
+
+export const ListCard = ({ listCardItems }: ListCardProps) => {
   return (
     <Container as="section" className="mt-20 md:mt-40">
       <div className="w-full max-w-[960px] mx-auto grid grid-cols-12 bg-primary rounded-2xl">

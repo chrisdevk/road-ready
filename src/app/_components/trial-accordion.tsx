@@ -5,11 +5,23 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/cn";
-import { trialAccordionItems } from "@/lib/constants";
 import { Check } from "lucide-react";
 import Image from "next/image";
 
-export const TrialAccordion = () => {
+interface TrialAccordionProps {
+  trialAccordionItems: {
+    question: string;
+    answer: string | null;
+    list: {
+      key: string;
+      value: string;
+    }[];
+  }[];
+}
+
+export const TrialAccordion = ({
+  trialAccordionItems,
+}: TrialAccordionProps) => {
   return (
     <Accordion
       type="single"
@@ -27,7 +39,7 @@ export const TrialAccordion = () => {
             {!!item.answer && (
               <p dangerouslySetInnerHTML={{ __html: item.answer }} />
             )}
-            {item.list && (
+            {!!item.list && (
               <ul className="space-y-2 text-neutral-600">
                 {item.list.map((item) => (
                   <li

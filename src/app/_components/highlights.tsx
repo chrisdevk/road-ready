@@ -2,7 +2,22 @@ import { HighlightStack } from "@/app/_components/highlight-stack";
 import { Container } from "@/components/ui/container";
 import { ScrollList } from "./scroll-list";
 
-export const Highlights = () => {
+interface HighlightsProps {
+  highlights: {
+    heading: string;
+    subheading: string;
+    icon: string;
+  }[];
+  scrollListItems: {
+    key: string;
+    value: string;
+  }[];
+}
+
+export const Highlights = ({
+  highlights,
+  scrollListItems,
+}: HighlightsProps) => {
   return (
     <article className="bg-black mt-20 md:mt-40 py-20 text-white">
       <Container as="section">
@@ -18,8 +33,8 @@ export const Highlights = () => {
             on
           </p>
         </div>
-        <HighlightStack />
-        <ScrollList />
+        <HighlightStack highlights={highlights} />
+        <ScrollList scrollListItems={scrollListItems} />
       </Container>
     </article>
   );

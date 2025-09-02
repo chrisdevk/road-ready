@@ -4,7 +4,18 @@ import { Container } from "@/components/ui/container";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
-export const TrialSection = () => {
+interface TrialSectionProps {
+  trialAccordionItems: {
+    question: string;
+    answer: string | null;
+    list: {
+      key: string;
+      value: string;
+    }[];
+  }[];
+}
+
+export const TrialSection = ({ trialAccordionItems }: TrialSectionProps) => {
   return (
     <article className="mt-20 md:mt-40 space-y-20">
       <Container as="section" className="text-center space-y-9">
@@ -22,7 +33,7 @@ export const TrialSection = () => {
         </Button>
       </Container>
       <Container as="section" className="grid grid-cols-2 gap-x-13">
-        <TrialAccordion />
+        <TrialAccordion trialAccordionItems={trialAccordionItems} />
         <div className="relative col-span-2 md:col-span-1 bg-primary h-full overflow-hidden rounded-2xl">
           <Image
             src="/images/trial-lesson.jpg"

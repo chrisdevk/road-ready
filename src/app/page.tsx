@@ -7,23 +7,29 @@ import { TrialSection } from "@/app/_components/trial-section";
 import { Callout } from "@/components/callout";
 import { ListCard } from "@/components/list-card";
 import { Testimonials } from "@/components/testimonials/testimonials";
+import homepage from "@/utils/data/static/homepage.json";
 
 export default function Home() {
+  const data = homepage;
+
   return (
     <>
       <Hero />
       <HeroCallout />
-      <List />
-      <Highlights />
-      <ListCard />
-      <TrialSection />
+      <List listItems={data.listItems} />
+      <Highlights
+        highlights={data.highlights}
+        scrollListItems={data.scrollListItems}
+      />
+      <ListCard listCardItems={data.listCardItems} />
+      <TrialSection trialAccordionItems={data.trialAccordionItems} />
       <Callout
         heading="Behind-The-Wheel Lessons are available <br className='hidden md:block' /> 7 days a week"
         buttonText="Choose Plan"
         buttonLink="/packages"
         color="primary"
       />
-      <Location />
+      <Location locationListItems={data.locationListItems} />
       <Callout
         heading="What Are You Waiting For?"
         subheading="Let’s Get You RoadReady"
@@ -31,7 +37,7 @@ export default function Home() {
         buttonLink="/packages"
         color="sand"
       />
-      <Testimonials />
+      <Testimonials testimonials={data.testimonials} />
     </>
   );
 }

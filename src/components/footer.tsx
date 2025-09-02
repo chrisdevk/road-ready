@@ -1,5 +1,5 @@
 import { Container } from "@/components/ui/container";
-import { navLinks } from "@/lib/constants";
+import menu from "@/utils/data/static/menu.json";
 import { Facebook, Instagram } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -42,9 +42,9 @@ export const Footer = () => {
         </div>
         <div className="flex gap-x-28">
           <ul className="flex flex-col gap-y-4 text-white">
-            {navLinks.map(
+            {menu.links.map(
               (link, i) =>
-                i !== navLinks.length - 1 && (
+                i !== menu.links.length - 1 && (
                   <li key={link.label}>
                     <Link
                       href={link.href}
