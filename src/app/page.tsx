@@ -2,11 +2,10 @@ import { Hero } from "@/app/_components/hero";
 import { HeroCallout } from "@/app/_components/hero-callout";
 import { Highlights } from "@/app/_components/highlights";
 import { List } from "@/app/_components/list";
-import { Location } from "@/app/_components/location";
 import { TrialSection } from "@/app/_components/trial-section";
 import { Callout } from "@/components/callout";
 import { ListCard } from "@/components/list-card";
-import { Testimonials } from "@/components/testimonials/testimonials";
+import { Location } from "@/components/location";
 import homepage from "@/utils/data/static/homepage.json";
 
 export default function Home() {
@@ -37,7 +36,6 @@ export default function Home() {
         buttonLink="/packages"
         color="sand"
       />
-      <Testimonials testimonials={data.testimonials} />
     </>
   );
 }

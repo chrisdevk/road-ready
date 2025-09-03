@@ -1,4 +1,7 @@
+import { Callout } from "@/components/callout";
 import { CardGrid } from "@/components/card-grid";
+import { ListCard } from "@/components/list-card";
+import { Location } from "@/components/location";
 import { PageHero } from "@/components/page-hero";
 import { Container } from "@/components/ui/container";
 import packages from "@/utils/data/static/packages.json";
@@ -13,16 +16,34 @@ export default async function PackagesPage() {
         color="black"
       />
       <article className="mt-20 md:mt-40">
-        <Container as="section">
-          <h2>Choose Your Plan</h2>
-          <p>
-            Select the training package that fits your needs. Learn at your own
-            pace with DMV-licensed instructors, and build the skills and
-            confidence to drive safely and independently
-          </p>
+        <Container as="section" className="space-y-10">
+          <div className="text-center space-y-5 w-[772px] mx-auto">
+            <h2>Choose Your Plan</h2>
+            <p>
+              Select the training package that fits your needs. Learn at your
+              own pace with DMV-licensed instructors, and build the skills and
+              confidence to drive safely and independently
+            </p>
+          </div>
           <CardGrid packages={data.packages} />
         </Container>
       </article>
+      <ListCard listCardItems={data.listCardItems} />
+      <Callout
+        heading="Not Sure Where to Start?"
+        subheading="Start with our $99 Trial Lesson <br /> Check your current level and get expert guidance for your training plan"
+        color="primary"
+        buttonText="Book Trial Lesson"
+        buttonLink="/packages"
+      />
+      <Location locationListItems={data.locationListItems} />
+      <Callout
+        heading="What Are You Waiting For?"
+        subheading="Let’s Get You RoadReady"
+        buttonText="Book Now"
+        buttonLink="/packages"
+        color="sand"
+      />
     </>
   );
 }

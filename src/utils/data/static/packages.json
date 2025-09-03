@@ -54,5 +54,59 @@
       "savings": 1010,
       "highlight": null
     }
+  ],
+  "listCardItems": [
+    {
+      "label": "Pickup, drop-off across Las Vegas",
+      "icon": "MapPin"
+    },
+    {
+      "label": "DMV-certified instructors",
+      "icon": "IdCard"
+    },
+    {
+      "label": "Dual-control safety vehicles",
+      "icon": "LockKeyhole"
+    },
+    {
+      "label": "Personalized recommendations",
+      "icon": "ClipboardPenLine"
+    },
+    {
+      "label": "No hidden fees",
+      "icon": "Ban"
+    }
+  ],
+  "locationListItems": [
+    {
+      "label": "Driving Lessons Areas",
+      "value": "Las Vegas | North Las Vegas |Henderson",
+      "icon": "LandPlot"
+    },
+    {
+      "label": "DMV Test Areas Covered",
+      "value": "Flamingo | Sahara | Decatur | Henderson",
+      "icon": "Map"
+    },
+    {
+      "label": "Driving Lessons Hours",
+      "value": "7 Days a Week, 9:00 AM – 9:00 PM",
+      "icon": "Calendar"
+    },
+    {
+      "label": "Contact Us",
+      "value": "Call or Text: (702) 747-5998",
+      "icon": "Phone"
+    },
+    {
+      "label": "Address",
+      "value": "5215 South Durango Drive Unit 2 <br /> Las Vegas Nevada 89113",
+      "icon": "MapPin"
+    },
+    {
+      "label": "Office Hours",
+      "value": "Monday – Friday: 9:00 AM – 4:00 PM <br /> Only by appointment",
+      "icon": "Clock"
+    }
   ]
 }
