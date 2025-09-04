@@ -1,0 +1,134 @@
+{
+  "packages": [
+    {
+      "name": "Solo Spin",
+      "duration": "1 Lesson - 2 Hours",
+      "description": "Pay for this one lesson",
+      "price": 140,
+      "fullPrice": null,
+      "savings": null,
+      "highlight": null
+    },
+    {
+      "name": "Duo Spin",
+      "duration": "2 Lessons - 4 Hours",
+      "description": "Pay for two lessons to receive a discount. You save $20",
+      "price": 260,
+      "fullPrice": 280,
+      "savings": 20,
+      "highlight": null
+    },
+    {
+      "name": "Starter Pack",
+      "duration": "3 Lessons - 6 Hours",
+      "description": "Pay for three lessons to receive a discount. You save $45",
+      "price": 375,
+      "fullPrice": 420,
+      "savings": 45,
+      "highlight": null
+    },
+    {
+      "name": "Explorer Pack",
+      "duration": "5 Lessons - 10 Hours",
+      "description": "Pay for five lessons to receive a discount. You save $110",
+      "price": 590,
+      "fullPrice": 700,
+      "savings": 110,
+      "highlight": "Most Popular"
+    },
+    {
+      "name": "Wheel Deal",
+      "duration": "10 Lessons - 20 Hours",
+      "description": "Pay for ten lessons to receive a discount. You save $250",
+      "price": 1150,
+      "fullPrice": 1400,
+      "savings": 250,
+      "highlight": "Smart Choice"
+    },
+    {
+      "name": "Road Warrior",
+      "duration": "25 Lessons - 50 Hours",
+      "description": "Pay for twenty five lessons to receive a discount. You save $1,010",
+      "price": 2490,
+      "fullPrice": 3500,
+      "savings": 1010,
+      "highlight": null
+    }
+  ],
+  "listCardItems": [
+    {
+      "label": "Pickup, drop-off across Las Vegas",
+      "icon": "MapPin"
+    },
+    {
+      "label": "DMV-certified instructors",
+      "icon": "IdCard"
+    },
+    {
+      "label": "Dual-control safety vehicles",
+      "icon": "LockKeyhole"
+    },
+    {
+      "label": "Personalized recommendations",
+      "icon": "ClipboardPenLine"
+    },
+    {
+      "label": "No hidden fees",
+      "icon": "Ban"
+    }
+  ],
+  "locationListItems": [
+    {
+      "label": "Driving Lessons Areas",
+      "value": "Las Vegas | North Las Vegas |Henderson",
+      "icon": "LandPlot"
+    },
+    {
+      "label": "DMV Test Areas Covered",
+      "value": "Flamingo | Sahara | Decatur | Henderson",
+      "icon": "Map"
+    },
+    {
+      "label": "Driving Lessons Hours",
+      "value": "7 Days a Week, 9:00 AM – 9:00 PM",
+      "icon": "Calendar"
+    },
+    {
+      "label": "Contact Us",
+      "value": "Call or Text: (702) 747-5998",
+      "icon": "Phone"
+    },
+    {
+      "label": "Address",
+      "value": "5215 South Durango Drive Unit 2 <br /> Las Vegas Nevada 89113",
+      "icon": "MapPin"
+    },
+    {
+      "label": "Office Hours",
+      "value": "Monday – Friday: 9:00 AM – 4:00 PM <br /> Only by appointment",
+      "icon": "Clock"
+    }
+  ],
+  "faqAccordionItems": [
+    {
+      "question": "What is the purpose of a behind-the-wheel lesson?",
+      "answer": "Behind-the-wheel lessons give Nevada students real, hands-on driving experience. They're designed to build the skills and confidence needed to become safe, responsible drivers."
+    },
+    {
+      "question": "Who can take a behind-the-wheel lesson?",
+      "answer": "You must hold a valid Nevada learner's permit and be at least 15½ years old to begin behind-the-wheel training."
+    },
+    {
+      "question": "What will I learn in a behind-the-wheel lesson?",
+      "answer": "You'll learn the basics of safe vehicle operation, essential driving skills such as defensive driving, navigating traffic, and following the rules of the road."
+    },
+    {
+      "question": "How many lessons do I need?",
+      "answer": "The number of lessons depends on your age, experience, and goals. RoadReady Driving School offers flexible options, from a single trial lesson to multi-lesson plans, as well as full 50-hour training for beginners."
+    },
+    {
+      "question": "How much does it cost?",
+      "answer": "Our lessons and packages are competitively priced, with options for every student. Check out our Packages section above or contact us directly for details."
+    }
+  ]
+}

@@ -12,6 +12,7 @@ interface TestimonialCarouselProps {
     name: string;
     quote: string;
     image: string;
+    title: string;
   }[];
 }
 
@@ -28,13 +29,19 @@ export const TestimonialCarousel = ({
           >
             <div className="flex flex-col gap-4 w-full max-w-[384px]">
               <div className="flex items-center justify-between">
-                <Image
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  width={44}
-                  height={44}
-                  className="rounded-full"
-                />
+                <div className="flex items-center gap-x-3">
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    width={44}
+                    height={44}
+                    className="rounded-full"
+                  />
+                  <div>
+                    <p className="font-medium">{testimonial.name}</p>
+                    <p className="text-sm">{testimonial.title}</p>
+                  </div>
+                </div>
                 <div className="flex items-center gap-x-1">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Image
@@ -47,7 +54,6 @@ export const TestimonialCarousel = ({
                   ))}
                 </div>
               </div>
-              <h3>{testimonial.name}</h3>
               <p>{testimonial.quote}</p>
             </div>
           </CarouselItem>

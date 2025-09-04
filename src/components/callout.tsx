@@ -33,7 +33,7 @@ export const Callout = ({
         )}
       >
         <h2 dangerouslySetInnerHTML={{ __html: heading }} />
-        {!!subheading && <p>{subheading}</p>}
+        {!!subheading && <p dangerouslySetInnerHTML={{ __html: subheading }} />}
         <Button asChild variant={color === "primary" ? "secondary" : "default"}>
           <Link href={buttonLink}>
             {buttonText}

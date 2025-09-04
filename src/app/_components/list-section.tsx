@@ -1,10 +1,13 @@
 import { ListItem } from "@/app/_components/list-item";
 import { cn } from "@/lib/cn";
-import { listItems } from "@/lib/constants";
 import Image from "next/image";
 
 interface ListSectionProps {
-  items: typeof listItems;
+  items: {
+    heading: string;
+    subheading: string;
+    icon: string;
+  }[];
   imageSrc: string;
   imageAlt: string;
   imagePosition: "left" | "right";

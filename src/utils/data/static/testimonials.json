@@ -1,0 +1,34 @@
+{
+  "testimonials": [
+    {
+      "name": "Nailia Doneen",
+      "title": "Student's Mom",
+      "quote": "“We tried an introductory lesson for my son, and it was the perfect fit. He left the car motivated and confident, so we signed up for a full driving course right away. Ed is an outstanding instructor, and thanks to him my son passed his driving test on the very first try after just 10 lessons.”",
+      "image": "/images/nailia.jpg"
+    },
+    {
+      "name": "Leo Dorosh",
+      "title": "Student",
+      "quote": "“I was nervous at first, but my instructor explained everything clearly and calmly. After only five lessons with Ed, I felt confident behind the wheel and passed my driving test on the first attempt.”",
+      "image": "/images/leo.jpg"
+    },
+    {
+      "name": "Evelina Che",
+      "title": "Student",
+      "quote": "“I had delayed learning to drive for years, but these lessons finally helped me overcome my fear. The calm and supportive approach made all the difference. Now I can drive on busy streets with confidence, and I’m so grateful for the patience and encouragement I received at RoadReady Driving School.”",
+      "image": "/images/evelina.jpg"
+    },
+    {
+      "name": "Olga Dokuchaeva",
+      "title": "Student",
+      "quote": "“I already had some driving experience from another country, but I was nervous about the Nevada test. Ed showed me DMV routes, shared great tips, and guided me through exactly what I needed to pass. Thanks to his help, I passed my exam without stress!”",
+      "image": "/images/olga.jpg"
+    },
+    {
+      "name": "Alona Green",
+      "title": "Student",
+      "quote": "“My experience with Ed was fantastic from day one. He made me feel comfortable and confident right away. His clear, patient teaching style and constant encouragement helped me pass my test easily and now I drive with total confidence on my own.”",
+      "image": "/images/alona.jpg"
+    }
+  ]
+}
