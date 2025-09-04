@@ -21,16 +21,22 @@ interface ListCardProps {
     label: string;
     icon: string;
   }[];
+  imageSrc: string;
+  imageAlt: string;
 }
 
-export const ListCard = ({ listCardItems }: ListCardProps) => {
+export const ListCard = ({
+  listCardItems,
+  imageSrc,
+  imageAlt,
+}: ListCardProps) => {
   return (
     <Container as="section" className="mt-20 md:mt-40">
       <div className="w-full max-w-[960px] mx-auto grid grid-cols-12 bg-primary rounded-2xl">
         <div className="col-span-12 md:col-span-7 relative h-[260px] md:h-auto">
           <Image
-            src="/images/person-driving.jpg"
-            alt="Person driving"
+            src={imageSrc}
+            alt={imageAlt}
             fill
             className="rounded-t-2xl md:rounded-t-none md:rounded-l-2xl object-cover"
           />

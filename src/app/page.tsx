@@ -20,7 +20,11 @@ export default function Home() {
         highlights={data.highlights}
         scrollListItems={data.scrollListItems}
       />
-      <ListCard listCardItems={data.listCardItems} />
+      <ListCard
+        listCardItems={data.listCardItems}
+        imageSrc="/images/person-driving.jpg"
+        imageAlt="Person driving"
+      />
       <TrialSection trialAccordionItems={data.trialAccordionItems} />
       <Callout
         heading="Behind-The-Wheel Lessons are available <br className='hidden md:block' /> 7 days a week"

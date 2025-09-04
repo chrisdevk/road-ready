@@ -108,5 +108,27 @@
       "value": "Monday – Friday: 9:00 AM – 4:00 PM <br /> Only by appointment",
       "icon": "Clock"
     }
+  ],
+  "faqAccordionItems": [
+    {
+      "question": "What is the purpose of a behind-the-wheel lesson?",
+      "answer": "Behind-the-wheel lessons give Nevada students real, hands-on driving experience. They're designed to build the skills and confidence needed to become safe, responsible drivers."
+    },
+    {
+      "question": "Who can take a behind-the-wheel lesson?",
+      "answer": "You must hold a valid Nevada learner's permit and be at least 15½ years old to begin behind-the-wheel training."
+    },
+    {
+      "question": "What will I learn in a behind-the-wheel lesson?",
+      "answer": "You'll learn the basics of safe vehicle operation, essential driving skills such as defensive driving, navigating traffic, and following the rules of the road."
+    },
+    {
+      "question": "How many lessons do I need?",
+      "answer": "The number of lessons depends on your age, experience, and goals. RoadReady Driving School offers flexible options, from a single trial lesson to multi-lesson plans, as well as full 50-hour training for beginners."
+    },
+    {
+      "question": "How much does it cost?",
+      "answer": "Our lessons and packages are competitively priced, with options for every student. Check out our Packages section above or contact us directly for details."
+    }
   ]
 }
