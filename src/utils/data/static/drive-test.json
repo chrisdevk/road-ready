@@ -1,0 +1,107 @@
+{
+  "packages": [
+    {
+      "name": "Duo Spin",
+      "duration": "2 Lessons - 4 Hours",
+      "description": "4 hours of pre-test driving practice <br /> You save $20",
+      "price": 260,
+      "fullPrice": 280,
+      "savings": 20,
+      "highlight": null
+    },
+    {
+      "name": "Test Pack",
+      "duration": "2 lessons + Car Rental",
+      "description": "4 hours of pre-test driving practice <br /> 3 hour car rental. You save $80",
+      "price": 440,
+      "fullPrice": 520,
+      "savings": 80,
+      "highlight": null
+    },
+    {
+      "name": "Car Rental Only",
+      "duration": "3 Hours (Test Day)",
+      "description": "3 hour car rental for your test day",
+      "price": 240,
+      "fullPrice": null,
+      "savings": null,
+      "highlight": null
+    }
+  ],
+  "listCardItems": [
+    {
+      "label": "Pickup, drop-off across Las Vegas",
+      "icon": "MapPin"
+    },
+    {
+      "label": "DMV-certified instructors",
+      "icon": "IdCard"
+    },
+    {
+      "label": "Dual-control safety vehicles",
+      "icon": "LockKeyhole"
+    },
+    {
+      "label": "Personalized recommendations",
+      "icon": "ClipboardPenLine"
+    },
+    {
+      "label": "No hidden fees",
+      "icon": "Ban"
+    }
+  ],
+  "faqAccordionItems": [
+    {
+      "question": "What to Expect on Test Day with RoadReady’s guidance",
+      "answer": "We guide you through every step so your test day feels simple and stress-free:<br/><ul><li><strong>Pick-up at home,</strong> we’ll collect you and you’ll be the one driving from the very start.</li><li><strong>Arrive early at the DMV,</strong> we get there 15–20 minutes ahead of time so you can warm up on nearby routes and get comfortable.</li><li><strong>Final practice & tips,</strong> we’ll go over DMV protocols, common test routes, and give you last-minute recommendations to help you stay calm and confident.</li><li><strong>Support during your test,</strong> while you take the exam, we wait for you at the DMV.</li><li><strong>Ride home after the test,</strong> when you’re done, we’ll drive back together, no matter the outcome.</li></ul>"
+    },
+    {
+      "question": "What documents do I need to take to the drive test?",
+      "answer": "Bring a valid ID, your Instruction Permit, proof of Nevada residency, vehicle registration, and proof of insurance."
+    },
+    {
+      "question": "How many mistakes are allowed on a drive test in Nevada?",
+      "answer": "Every driver begins with zero points and receives points for each mistake made during the test. To pass, you must finish the exam with fewer than 25 points."
+    },
+    {
+      "question": "What is the most common reason people fail in a drive test?",
+      "answer": "The most frequent reasons for failing include not following the examiner’s directions, weak observation skills (such as forgetting to check mirrors and blind spots), making improper turns or lane changes, and failing to signal. Other common issues are not obeying speed limits, incomplete stops, or poor overall vehicle control. With practice and proper instruction, these mistakes can be avoided."
+    },
+    {
+      "question": "Can I drive immediately after passing my test?",
+      "answer": "Yes, you’ll receive a temporary license the same day, and your permanent one arrives by mail in a few weeks."
+    }
+  ],
+  "locationListItems": [
+    {
+      "label": "Driving Lessons Areas",
+      "value": "Las Vegas | North Las Vegas |Henderson",
+      "icon": "LandPlot"
+    },
+    {
+      "label": "DMV Test Areas Covered",
+      "value": "Flamingo | Sahara | Decatur | Henderson",
+      "icon": "Map"
+    },
+    {
+      "label": "Driving Lessons Hours",
+      "value": "7 Days a Week, 9:00 AM – 9:00 PM",
+      "icon": "Calendar"
+    },
+    {
+      "label": "Contact Us",
+      "value": "Call or Text: (702) 747-5998",
+      "icon": "Phone"
+    },
+    {
+      "label": "Address",
+      "value": "5215 South Durango Drive Unit 2 <br /> Las Vegas Nevada 89113",
+      "icon": "MapPin"
+    },
+    {
+      "label": "Office Hours",
+      "value": "Monday – Friday: 9:00 AM – 4:00 PM <br /> Only by appointment",
+      "icon": "Clock"
+    }
+  ]
+}

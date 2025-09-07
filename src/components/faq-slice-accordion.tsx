@@ -11,14 +11,16 @@ interface FaqSliceAccordionProps {
     question: string;
     answer: string;
   }[];
+  heading?: string;
 }
 
 export const FaqSliceAccordion = ({
   faqAccordionItems,
+  heading,
 }: FaqSliceAccordionProps) => {
   return (
     <Container as="section" className="mt-20 md:mt-40 space-y-10">
-      <h2 className="text-center">Driving Lesson FAQ</h2>
+      <h2 className="text-center">{heading}</h2>
       <Accordion
         type="single"
         defaultValue={faqAccordionItems[0].question}
@@ -29,8 +31,8 @@ export const FaqSliceAccordion = ({
             <AccordionTrigger className="text-lg md:text-xl font-semibold">
               {item.question}
             </AccordionTrigger>
-            <AccordionContent className="text-base">
-              {item.answer}
+            <AccordionContent className="text-base text-neutral-600">
+              <div dangerouslySetInnerHTML={{ __html: item.answer }} />
             </AccordionContent>
           </AccordionItem>
         ))}
