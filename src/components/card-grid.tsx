@@ -39,7 +39,10 @@ export const CardGrid = ({ packages }: { packages: Package[] }) => {
               <p className="text-primary text-lg font-semibold">
                 {item.duration}
               </p>
-              <p className="text-sm">{item.description}</p>
+              <p
+                className="text-sm"
+                dangerouslySetInnerHTML={{ __html: item.description }}
+              />
             </CardContent>
             <CardFooter className="flex items-end gap-x-2.5 mt-auto">
               <p className="text-5xl font-semibold text-black font-poppins">

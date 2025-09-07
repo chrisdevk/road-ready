@@ -34,7 +34,10 @@ export default async function PackagesPage() {
         imageSrc="/images/trial-lesson.jpg"
         imageAlt="Person driving"
       />
-      <FaqSliceAccordion faqAccordionItems={data.faqAccordionItems} />
+      <FaqSliceAccordion
+        heading="Driving Lesson FAQ"
+        faqAccordionItems={data.faqAccordionItems}
+      />
       <Callout
         heading="Not Sure Where to Start?"
         subheading="Start with our $99 Trial Lesson <br /> Check your current level and get expert guidance for your training plan"
