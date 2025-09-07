@@ -23,7 +23,7 @@ export const PageHero = ({ heading, subheading, color }: PageHeroProps) => {
     <section className={cn("py-32 mt-20", getColor(color))}>
       <Container className="text-white text-center flex flex-col gap-y-10 items-center justify-center ">
         <h1>{heading}</h1>
-        <p>{subheading}</p>
+        <p dangerouslySetInnerHTML={{ __html: subheading }} />
       </Container>
     </section>
   );
