@@ -31,9 +31,14 @@ export const FaqSliceAccordion = ({
             <AccordionTrigger className="text-lg md:text-xl font-semibold">
               {item.question}
             </AccordionTrigger>
-            <AccordionContent className="text-base text-neutral-600">
-              <div dangerouslySetInnerHTML={{ __html: item.answer }} />
-            </AccordionContent>
+<AccordionContent className="text-base text-neutral-600">
+  {typeof item.answerHtml === "string" && item.answerHtml.length > 0 ? (
+    <div dangerouslySetInnerHTML={{ __html: item.answerHtml }} />
+  ) : (
+    
+    <p>{(item as any).answer ?? ""}</p>
+  )}
+</AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>

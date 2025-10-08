@@ -7,7 +7,7 @@ import { Callout } from "@/components/callout";
 import { ListCard } from "@/components/list-card";
 import { Location } from "@/components/location";
 import homepage from "@/utils/data/static/homepage.json";
-
+import BookingModal from "@/components/booking/BookingModal";
 export default function Home() {
   const data = homepage;
 
