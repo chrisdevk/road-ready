@@ -30,6 +30,7 @@ export default async function PackagesPage() {
             </p>
           </div>
 
+          {/* Cards contain the Book Now buttons that call the modal store */}
           <CardGrid packages={data.packages} />
         </Container>
       </article>
@@ -45,23 +46,23 @@ export default async function PackagesPage() {
         faqAccordionItems={data.faqAccordionItems}
       />
 
-      {/* Callout #1 with modal button */}
+      {/* Keep Callouts, but DO NOT mount the modal inside them */}
       <Callout
         heading="Not Sure Where to Start?"
         subheading="Start with our $99 Trial Lesson <br /> Check your current level and get expert guidance for your training plan"
         color="primary"
-        buttonSlot={<BookingModal />}
       />
 
       <Location locationListItems={data.locationListItems} />
 
-      {/* Callout #2 with modal button */}
       <Callout
         heading="What Are You Waiting For?"
         subheading="Let’s Get You RoadReady"
         color="sand"
-        buttonSlot={<BookingModal />}
       />
+
+      {/* Mount EXACTLY ONE BookingModal instance on the page */}
+      <BookingModal />
     </>
   );
 }
