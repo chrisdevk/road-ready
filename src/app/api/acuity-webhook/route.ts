@@ -43,8 +43,8 @@ export async function POST(req: Request) {
       console.error("Acuity webhook: bad JSON:", raw);
       return NextResponse.json({ ok: false, reason: "bad_json" }, { status: 400 });
     }
-
-    // Log everything so you can see the exact shape
+  
+  //  log everything for debugging
     console.log("Acuity webhook payload:", JSON.stringify(payload, null, 2));
 
     // Typical fields:
@@ -80,8 +80,8 @@ export async function POST(req: Request) {
         console.log("ℹUnhandled Acuity event:", event);
     }
 
-    // If you need to do DB writes / send emails, do it here.
-    // Keep the handler fast—Acuity expects a quick 2xx.
+    // If we need to do DB writes / send emails, do it here.
+    // Keeps the handler fast—Acuity expects a quick 2xx.
     return NextResponse.json({ ok: true });
   } catch (err: any) {
     console.error("Acuity webhook error:", err?.message || err);
