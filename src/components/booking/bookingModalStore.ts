@@ -2,9 +2,13 @@
 import { create } from "zustand";
 
 export type BookingCtx = {
-  appointmentTypeId?: number | string; // Acuity appointment type
-  priceId?: string;                    // Stripe price id (price_xxx)
-  name?: string;                       // Display in modal header
+  appointmentTypeId?: number | string;
+  priceId?: string;
+  name?: string;
+
+  // 👇 add these so the modal can prefill Contact fields
+  email?: string;
+  phone?: string;
 };
 
 type BookingState = {

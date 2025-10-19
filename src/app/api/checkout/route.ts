@@ -1,22 +1,49 @@
 import Stripe from "stripe";
 import { NextResponse } from "next/server";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, { apiVersion: "2024-06-20" });
+export const dynamic = "force-dynamic";
+
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+  apiVersion: "2025-09-30.clover",
+});
 
 export async function POST(req: Request) {
-  const { priceId, metadata } = await req.json();
+  try {
+    const { priceId, meta } = await req.json();
+    if (!priceId) {
+      return NextResponse.json({ error: "Missing priceId" }, { status: 400 });
+    }
 
-  const session = await stripe.checkout.sessions.create({
-    mode: "payment",
-    line_items: [{ price: priceId, quantity: 1 }],
-    success_url: `${process.env.NEXT_PUBLIC_SITE_URL}/success`,
-    cancel_url: `${process.env.NEXT_PUBLIC_SITE_URL}/packages`,
-    metadata,
-  });
+    const base =
+      process.env.APP_BASE_URL ||
+      process.env.NEXT_PUBLIC_SITE_URL ||
+      "http://localhost:3000";
 
-  return NextResponse.json({ url: session.url });
+    const session = await stripe.checkout.sessions.create({
+      mode: "payment",
+      line_items: [{ price: String(priceId), quantity: 1 }],
+      success_url: `${base}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${base}/packages`,
+
+      phone_number_collection: { enabled: true },
+      customer_email: meta?.email || undefined,
+      customer_creation: "always",
+
+      metadata: {
+        appointmentTypeId: String(meta?.appointmentTypeId ?? ""),
+        dateTime: String(meta?.dateTime ?? ""),
+        email: String(meta?.email ?? ""),
+        phone: String(meta?.phone ?? ""),
+        packageName: String(meta?.packageName ?? ""),
+      },
+    });
+
+    return NextResponse.json({ url: session.url });
+  } catch (err: any) {
+    console.error("Stripe /checkout error:", err);
+    return NextResponse.json(
+      { error: err?.message ?? "Stripe error" },
+      { status: 500 }
+    );
+  }
 }
-
-// NOTE: this does not create the actual Acuity appointment yet.
-// we wait for the payment to complete, see /src/lib/webhooks.ts
-// we can store the metadata.bookingId in your DB to reconcile later if needed.
