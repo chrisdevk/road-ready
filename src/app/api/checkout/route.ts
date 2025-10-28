@@ -10,6 +10,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 export async function POST(req: Request) {
   try {
     const { priceId, meta } = await req.json();
+
     if (!priceId) {
       return NextResponse.json({ error: "Missing priceId" }, { status: 400 });
     }
@@ -24,11 +25,9 @@ export async function POST(req: Request) {
       line_items: [{ price: String(priceId), quantity: 1 }],
       success_url: `${base}/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${base}/packages`,
-
       phone_number_collection: { enabled: true },
       customer_email: meta?.email || undefined,
       customer_creation: "always",
-
       metadata: {
         appointmentTypeId: String(meta?.appointmentTypeId ?? ""),
         dateTime: String(meta?.dateTime ?? ""),
@@ -41,9 +40,6 @@ export async function POST(req: Request) {
     return NextResponse.json({ url: session.url });
   } catch (err: any) {
     console.error("Stripe /checkout error:", err);
-    return NextResponse.json(
-      { error: err?.message ?? "Stripe error" },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: err?.message ?? "Stripe error" }, { status: 500 });
   }
 }

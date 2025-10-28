@@ -6,7 +6,7 @@ export type BookingCtx = {
   priceId?: string;
   name?: string;
 
-  // 👇 add these so the modal can prefill Contact fields
+  //  add these so the modal can prefill Contact fields
   email?: string;
   phone?: string;
 };

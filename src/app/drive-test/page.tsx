@@ -5,6 +5,7 @@ import { ListCard } from "@/components/list-card";
 import { Location } from "@/components/location";
 import { PageHero } from "@/components/page-hero";
 import { Container } from "@/components/ui/container";
+import BookingModal from "@/components/booking/BookingModal";
 import driveTest from "@/utils/data/static/drive-test.json";
 
 export default function DriveTestPage() {
@@ -53,6 +54,7 @@ export default function DriveTestPage() {
         buttonText="Book Now"
         buttonLink="#packages"
         color="sand"
+        buttonSlot={<BookingModal />}
       />
     </>
   );
