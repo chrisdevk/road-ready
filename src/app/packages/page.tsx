@@ -26,7 +26,7 @@ export default async function PackagesPage() {
             <p>
               Select the training package that fits your needs. Learn at your
               own pace with DMV-licensed instructors, and build the skills and
-              confidence to drive safely and independently
+              confidence to drive safely and independently.
             </p>
           </div>
 
@@ -53,7 +53,14 @@ export default async function PackagesPage() {
         buttonSlot={<BookingModal />}
       />
 
-      <Location locationListItems={data.locationListItems} />
+      {/* ✅ FIX: convert string[] → proper object[] for Location */}
+      <Location
+        locationListItems={data.locationListItems.map((loc: string) => ({
+          label: loc,
+          value: loc,
+          icon: "MapPin",
+        }))}
+      />
 
       {/* Callout #2 with modal button */}
       <Callout

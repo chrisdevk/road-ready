@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 import { getAppointmentTypes } from "@/lib/acuity";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
-  const lessons = await getAppointmentTypes();
-  return NextResponse.json(lessons);
+  const types = await getAppointmentTypes();
+  return NextResponse.json(types);
 }

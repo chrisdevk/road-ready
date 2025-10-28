@@ -1,58 +1,39 @@
 import { NextResponse } from "next/server";
 
-const ACUITY_USER_ID =
-  process.env.ACUITY_USER_ID || process.env.ACUITY_API_USER || "";
-const ACUITY_API_KEY =
-  process.env.ACUITY_API_KEY || process.env.ACUITY_API_PASS || "";
+const ACUITY_USER_ID = process.env.ACUITY_API_USER;
+const ACUITY_API_KEY = process.env.ACUITY_API_PASS;
 
-if (!ACUITY_USER_ID || !ACUITY_API_KEY) {
-  return NextResponse.json(
-    { ok: false, reason: "missing_api_creds" },
-    { status: 500 }
-  );
-}
-const FRESH_MINUTES = 30; // считаем запись свежей 30 мин
+export const dynamic = "force-dynamic";
 
-export async function GET(req: Request) {
+export async function GET() {
+  // ✅ Check credentials inside the handler
+  if (!ACUITY_USER_ID || !ACUITY_API_KEY) {
+    return NextResponse.json(
+      { ok: false, reason: "missing_api_creds" },
+      { status: 500 }
+    );
+  }
+
   try {
-    const { searchParams } = new URL(req.url);
-    const email = searchParams.get("email");
-    const appointmentTypeId = searchParams.get("type");
-
-    if (!email || !appointmentTypeId) {
-      return NextResponse.json({ ok: false, reason: "missing_params" }, { status: 400 });
-    }
-
     const auth = Buffer.from(`${ACUITY_USER_ID}:${ACUITY_API_KEY}`).toString("base64");
-    const since = new Date(Date.now() - FRESH_MINUTES * 60_000).toISOString();
 
-    const url = new URL("https://acuityscheduling.com/api/v1/appointments");
-    url.searchParams.set("email", email);
-    url.searchParams.set("appointmentTypeID", String(appointmentTypeId));
-    url.searchParams.set("minDate", since);
-
-    const res = await fetch(url.toString(), {
-      headers: {
-        Authorization: `Basic ${auth}`,
-        Accept: "application/json",
-      },
-      cache: "no-store",
+    // Basic sanity check: fetch Acuity appointment types
+    const res = await fetch("https://acuityscheduling.com/api/v1/appointment-types", {
+      headers: { Authorization: `Basic ${auth}` },
     });
+
+    const data = await res.json();
 
     if (!res.ok) {
-      const text = await res.text();
-      return NextResponse.json({ ok: false, reason: "acuity_error", text }, { status: 502 });
+      return NextResponse.json(
+        { ok: false, reason: "acuity_error", status: res.status, text: data },
+        { status: res.status }
+      );
     }
 
-    const items = await res.json();
-    const found = Array.isArray(items) && items.length > 0;
-
-    return NextResponse.json({
-      ok: true,
-      found,
-      appointment: found ? items[0] : null,
-    });
-  } catch (e: any) {
-    return NextResponse.json({ ok: false, reason: "server_error", msg: e?.message }, { status: 500 });
+    return NextResponse.json({ ok: true, data });
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : "Unknown error";
+    return NextResponse.json({ ok: false, reason: "network_error", message }, { status: 500 });
   }
 }
