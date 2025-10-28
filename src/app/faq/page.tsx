@@ -3,13 +3,40 @@ import { Callout } from "@/components/callout";
 import { PageHero } from "@/components/page-hero";
 import { Container } from "@/components/ui/container";
 import faq from "@/utils/data/static/faq.json";
+import { Metadata } from "next";
 import { FaqAccordion } from "./_components/faq-accordion";
 
-export const metadata = {
-  title: "FAQ — RoadReady",
-  description:
-    "Common questions about lessons, vehicles, and the RoadReady app.",
-};
+export const revalidate = 86400 * 30; // 30 days
+
+export function generateMetadata(): Metadata {
+  return {
+    title: "FAQ — RoadReady Driving School",
+    description: "Common questions about lessons, vehicles, and more",
+    keywords: "FAQ, RoadReady, lessons, vehicles",
+    authors: [{ name: "Road Ready Driving School" }],
+    robots: {
+      index: true,
+      follow: true,
+    },
+    openGraph: {
+      title: "FAQ — RoadReady Driving School",
+      description:
+        "Common questions about lessons, vehicles, and the RoadReady app.",
+      url: "https://roadready.com",
+      siteName: "Road Ready Driving School",
+      images: [
+        {
+          url: "/images/hero-img.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Road Ready Driving School",
+        },
+      ],
+      type: "website",
+      locale: "en_US",
+    },
+  };
+}
 
 export default function FaqPage() {
   const data = faq;

@@ -7,6 +7,39 @@ import { PageHero } from "@/components/page-hero";
 import { Container } from "@/components/ui/container";
 import BookingModal from "@/components/booking/BookingModal";
 import driveTest from "@/utils/data/static/drive-test.json";
+import { Metadata } from "next";
+
+export const revalidate = 86400 * 30; // 30 days
+
+export function generateMetadata(): Metadata {
+  return {
+    title: "Drive Test - Road Ready Driving School",
+    description: "Prepare for your Driving Test with RoadReady Driving School",
+    keywords: "Drive Test, RoadReady, Driving Test, Driving Test Preparation",
+    authors: [{ name: "Road Ready Driving School" }],
+    robots: {
+      index: true,
+      follow: true,
+    },
+    openGraph: {
+      title: "Drive Test - Road Ready Driving School",
+      description:
+        "Prepare for your Driving Test with RoadReady Driving School",
+      url: "https://roadready.com",
+      siteName: "Road Ready Driving School",
+      images: [
+        {
+          url: "/images/hero-img.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Road Ready Driving School",
+        },
+      ],
+      type: "website",
+      locale: "en_US",
+    },
+  };
+}
 
 export default function DriveTestPage() {
   const data = driveTest;
