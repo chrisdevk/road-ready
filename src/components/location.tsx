@@ -1,5 +1,5 @@
 import { Container } from "@/components/ui/container";
-import { LocationList } from "./location-list";
+import LocationList from "./location-list"; // 
 
 interface LocationProps {
   locationListItems: {
@@ -23,7 +23,7 @@ export const Location = ({ locationListItems }: LocationProps) => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         className="w-full rounded-2xl h-52 md:h-[370px]"
-      ></iframe>
+      />
       <LocationList locationListItems={locationListItems} />
     </Container>
   );

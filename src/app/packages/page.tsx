@@ -5,6 +5,7 @@ import { ListCard } from "@/components/list-card";
 import { Location } from "@/components/location";
 import { PageHero } from "@/components/page-hero";
 import { Container } from "@/components/ui/container";
+import BookingModal from "@/components/booking/BookingModal";
 import packages from "@/utils/data/static/packages.json";
 import { Metadata } from "next";
 
@@ -42,6 +43,7 @@ export function generateMetadata(): Metadata {
 
 export default async function PackagesPage() {
   const data = packages;
+
   return (
     <>
       <PageHero
@@ -49,6 +51,7 @@ export default async function PackagesPage() {
         subheading="Behind-The-Wheel driving lessons in Las Vegas for teens, adults, and international drivers"
         color="black"
       />
+
       <article className="mt-20 md:mt-40">
         <Container as="section" className="space-y-10">
           <div className="text-center space-y-5 lg:w-[772px] mx-auto">
@@ -56,35 +59,48 @@ export default async function PackagesPage() {
             <p>
               Select the training package that fits your needs. Learn at your
               own pace with DMV-licensed instructors, and build the skills and
-              confidence to drive safely and independently
+              confidence to drive safely and independently.
             </p>
           </div>
+
           <CardGrid packages={data.packages} />
         </Container>
       </article>
+
       <ListCard
         listCardItems={data.listCardItems}
         imageSrc="/images/trial-lesson.jpg"
         imageAlt="Person driving"
       />
+
       <FaqSliceAccordion
         heading="Driving Lesson FAQ"
         faqAccordionItems={data.faqAccordionItems}
       />
+
+      {/* Callout #1 with modal button */}
       <Callout
         heading="Not Sure Where to Start?"
         subheading="Start with our $99 Trial Lesson <br /> Check your current level and get expert guidance for your training plan"
         color="primary"
-        buttonText="Book Trial Lesson"
-        buttonLink="/packages"
+        buttonSlot={<BookingModal />}
       />
-      <Location locationListItems={data.locationListItems} />
+
+      {/* ✅ FIX: convert string[] → proper object[] for Location */}
+      <Location
+        locationListItems={data.locationListItems.map((loc: string) => ({
+          label: loc,
+          value: loc,
+          icon: "MapPin",
+        }))}
+      />
+
+      {/* Callout #2 with modal button */}
       <Callout
         heading="What Are You Waiting For?"
         subheading="Let’s Get You RoadReady"
-        buttonText="Book Now"
-        buttonLink="/packages"
         color="sand"
+        buttonSlot={<BookingModal />}
       />
     </>
   );

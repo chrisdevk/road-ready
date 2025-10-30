@@ -1,13 +1,16 @@
 {
   "packages": [
     {
-      "name": "Duo Spin",
+      "name": "Duo Spin - Pre-Test Practice",
       "duration": "2 Lessons - 4 Hours",
       "description": "4 hours of pre-test driving practice <br /> You save $20",
       "price": 260,
       "fullPrice": 280,
       "savings": 20,
-      "highlight": null
+      "highlight": null,
+      "acuityTypeId": 84523338,
+      "stripePriceId": "price_1SLcOqDVE94tp07xKo88pGxz"
+
     },
     {
       "name": "Test Pack",
@@ -16,7 +19,8 @@
       "price": 440,
       "fullPrice": 520,
       "savings": 80,
-      "highlight": null
+      "highlight": null,
+       "acuityTypeId": 85028119
     },
     {
       "name": "Car Rental Only",
@@ -25,7 +29,8 @@
       "price": 240,
       "fullPrice": null,
       "savings": null,
-      "highlight": null
+      "highlight": null,
+      "acuityTypeId": 83305390
     }
   ],
   "listCardItems": [

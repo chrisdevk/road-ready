@@ -3,13 +3,15 @@ import { Container } from "@/components/ui/container";
 import { cn } from "@/lib/cn";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import React from "react";
 
 interface CalloutProps {
   heading: string;
   subheading?: string;
-  buttonText: string;
-  buttonLink: string;
+  buttonText?: string;
+  buttonLink?: string;
   color: "primary" | "sand";
+  buttonSlot?: React.ReactNode;
 }
 
 export const Callout = ({
@@ -18,6 +20,7 @@ export const Callout = ({
   buttonText,
   buttonLink,
   color,
+  buttonSlot,
 }: CalloutProps) => {
   return (
     <section
@@ -34,12 +37,18 @@ export const Callout = ({
       >
         <h2 dangerouslySetInnerHTML={{ __html: heading }} />
         {!!subheading && <p dangerouslySetInnerHTML={{ __html: subheading }} />}
-        <Button asChild variant={color === "primary" ? "secondary" : "default"}>
-          <Link href={buttonLink}>
-            {buttonText}
-            <ArrowUpRight />
-          </Link>
-        </Button>
+
+        {/* Prefer custom slot if provided */}
+        {buttonSlot ? (
+          <div className="mt-2">{buttonSlot}</div>
+        ) : buttonText && buttonLink ? (
+          <Button asChild variant={color === "primary" ? "secondary" : "default"}>
+            <Link href={buttonLink}>
+              {buttonText}
+              <ArrowUpRight />
+            </Link>
+          </Button>
+        ) : null}
       </Container>
     </section>
   );

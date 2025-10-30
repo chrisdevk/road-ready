@@ -1,3 +1,4 @@
+import BookingModal from "@/components/booking/BookingModal";
 import { Callout } from "@/components/callout";
 import { CardGrid } from "@/components/card-grid";
 import { FaqSliceAccordion } from "@/components/faq-slice-accordion";
@@ -8,7 +9,7 @@ import { Container } from "@/components/ui/container";
 import driveTest from "@/utils/data/static/drive-test.json";
 import { Metadata } from "next";
 
-export const revalidate = 86400 * 30; // 30 days
+export const revalidate = 86400; // 1 day
 
 export function generateMetadata(): Metadata {
   return {
@@ -86,6 +87,7 @@ export default function DriveTestPage() {
         buttonText="Book Now"
         buttonLink="#packages"
         color="sand"
+        buttonSlot={<BookingModal />}
       />
     </>
   );
