@@ -9,7 +9,7 @@ import { Location } from "@/components/location";
 import homepage from "@/utils/data/static/homepage.json";
 import { Metadata } from "next";
 
-export const revalidate = 86400 * 30; // 30 days
+export const revalidate = 86400; // 1 day
 
 export function generateMetadata(): Metadata {
   return {

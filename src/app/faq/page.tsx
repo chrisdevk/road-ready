@@ -6,7 +6,7 @@ import faq from "@/utils/data/static/faq.json";
 import { Metadata } from "next";
 import { FaqAccordion } from "./_components/faq-accordion";
 
-export const revalidate = 86400 * 30; // 30 days
+export const revalidate = 86400; // 1 day
 
 export function generateMetadata(): Metadata {
   return {
