@@ -2,7 +2,7 @@
 const nextConfig = {
   // Optional: let production builds succeed even if ESLint has errors.
   // need to remove this later and fix linting issues
-  eslint: { ignoreDuringBuilds: true },
+  // eslint: { ignoreDuringBuilds: true },
 
   async headers() {
     return [
