@@ -1,5 +1,6 @@
 import { Footer } from "@/components/footer";
 import { MainNavigation } from "@/components/main-navigation/main-navigation";
+import { PhoneBubble } from "@/components/phone-bubble";
 import { Testimonials } from "@/components/testimonials/testimonials";
 import { cn } from "@/lib/cn";
 import { notoSans, poppins } from "@/lib/fonts";
@@ -25,6 +26,7 @@ export default function RootLayout({
         {children}
         <Testimonials testimonials={data.testimonials} />
         <Footer />
+        <PhoneBubble />
       </body>
     </html>
   );
