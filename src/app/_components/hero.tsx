@@ -32,8 +32,8 @@ export const Hero = () => {
             className="text-xl mt-3.5"
           >
             <span>
-              RoadReady Driving School provides <br /> DMV-approved
-              behind-the-wheel lessons for teens and adults.{" "}
+              RoadReady Driving School provides <br className="md:hidden" />{" "}
+              DMV-approved behind-the-wheel lessons for teens and adults.{" "}
               <br className="hidden md:block" /> We help you become a safe and
               confident driver
             </span>
