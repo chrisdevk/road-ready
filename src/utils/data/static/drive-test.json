@@ -14,7 +14,7 @@
     {
       "name": "Test Pack",
       "duration": "2 lessons + Car Rental",
-      "description": "4 hours of pre-test driving practice <br /> 3 hour car rental. You save $80",
+      "description": "4 hours of pre-test driving practice 3 hour car rental. You save $80",
       "price": 440,
       "fullPrice": 520,
       "savings": 80,
@@ -79,7 +79,7 @@
   "locationListItems": [
     {
       "label": "Driving Lessons Areas",
-      "value": "Las Vegas | North Las Vegas |Henderson",
+      "value": "Las Vegas | North Las Vegas | Henderson",
       "icon": "LandPlot"
     },
     {
@@ -99,7 +99,7 @@
     },
     {
       "label": "Address",
-      "value": "5215 South Durango Drive Unit 2 <br /> Las Vegas Nevada 89113",
+      "value": "5215 South Durango Drive Suite 2 <br /> Las Vegas Nevada 89113",
       "icon": "MapPin"
     },
     {

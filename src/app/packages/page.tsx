@@ -47,11 +47,10 @@ export default async function PackagesPage() {
   return (
     <>
       <PageHero
-        heading="We Teach - You Drive"
+        heading="We Teach <br className='md:hidden' /> You Drive"
         subheading="Behind-The-Wheel driving lessons in Las Vegas for teens, adults, and international drivers"
         color="black"
       />
-
       <article className="mt-20 md:mt-40" id="packages">
         <Container as="section" className="space-y-10">
           <div className="text-center space-y-5 lg:w-[772px] mx-auto">
@@ -62,47 +61,31 @@ export default async function PackagesPage() {
               confidence to drive safely and independently.
             </p>
           </div>
-
           <CardGrid packages={data.packages} />
         </Container>
       </article>
-
       <ListCard
         listCardItems={data.listCardItems}
         imageSrc="/images/trial-lesson.jpg"
         imageAlt="Person driving"
       />
-
       <FaqSliceAccordion
         heading="Driving Lesson FAQ"
         faqAccordionItems={data.faqAccordionItems}
       />
-
-      {/* Callout #1 with modal button */}
       <Callout
         heading="Not Sure Where to Start?"
         subheading="Start with our $99 Trial Lesson <br /> Check your current level and get expert guidance for your training plan"
         color="primary"
         buttonSlot={<BookingModal />}
       />
-
-      {/* ✅ FIX: convert string[] → proper object[] for Location */}
-      <Location
-        locationListItems={data.locationListItems.map((loc: string) => ({
-          label: loc,
-          value: loc,
-          icon: "MapPin",
-        }))}
-      />
-
-      {/* Callout #2 with modal button */}
+      <Location locationListItems={data.locationListItems} />
       <Callout
         heading="What Are You Waiting For?"
         subheading="Let’s Get You RoadReady"
         color="sand"
         buttonText="Book Now"
         buttonLink="#packages"
-        // buttonSlot={<BookingModal />}
       />
     </>
   );

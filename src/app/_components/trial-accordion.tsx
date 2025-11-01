@@ -6,7 +6,6 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/cn";
 import { Check } from "lucide-react";
-import Image from "next/image";
 
 interface TrialAccordionProps {
   trialAccordionItems: {
@@ -52,14 +51,6 @@ export const TrialAccordion = ({
                 ))}
               </ul>
             )}
-            <div className="relative bg-primary h-[260px] md:h-full md:hidden overflow-hidden rounded-2xl">
-              <Image
-                src="/images/person-driving.jpg"
-                alt="Trial lesson"
-                fill
-                className="rounded-2xl object-cover mt-4 ml-4"
-              />
-            </div>
           </AccordionContent>
         </AccordionItem>
       ))}

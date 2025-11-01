@@ -79,7 +79,7 @@ export const MainNavigation = () => {
             transition={{ duration: 0.3 }}
             className="fixed top-0 left-0 w-full h-full bg-black/50 backdrop-blur-lg rounded-b-2xl z-40 overflow-hidden"
           >
-            <Menu links={menu.links} />
+            <Menu links={menu.links} setIsOpen={setIsOpen} />
           </motion.div>
         )}
       </AnimatePresence>

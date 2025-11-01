@@ -77,7 +77,7 @@ export default function DriveTestPage() {
         subheading="See all driving lesson packages"
         color="primary"
         buttonText="Choose Plan"
-        buttonLink="#packages"
+        buttonLink="/packages#packages"
       />
       <Location locationListItems={data.locationListItems} />
       <Callout

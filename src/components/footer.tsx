@@ -7,8 +7,8 @@ import Link from "next/link";
 export const Footer = () => {
   const date = new Date();
   return (
-    <footer className="bg-black py-18">
-      <Container className="flex flex-col gap-y-8 md:flex-row justify-between">
+    <footer className="bg-black py-18 pb-12 lg:pb-18">
+      <Container className="flex flex-col gap-y-16 lg:gap-y-8 md:flex-row justify-between">
         <div className="flex flex-col gap-y-24">
           <div className="flex flex-row md:flex-col justify-between md:justify-start gap-x-8 md:gap-y-8">
             <Image
@@ -59,13 +59,11 @@ export const Footer = () => {
           </ul>
           <ul className="flex flex-col gap-y-4 text-white">
             <li>
-              <Link href="/" className="transition-colors hover:text-primary">
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="transition-colors hover:text-primary">
-                Terms & Conditions
+              <Link
+                href="/our-policies"
+                className="transition-colors hover:text-primary"
+              >
+                Our Policies
               </Link>
             </li>
             <li>

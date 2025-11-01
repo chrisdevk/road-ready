@@ -14,7 +14,7 @@
     {
       "name": "Duo Spin",
       "duration": "2 Lessons - 4 Hours",
-      "description": "Pay for two lessons to receive a discount. You save $20",
+      "description": "Pay for two lessons to receive a discount. <br /> You save $20",
       "price": 260,
       "fullPrice": 280,
       "savings": 20,
@@ -25,7 +25,7 @@
     {
       "name": "Starter Pack",
       "duration": "3 Lessons - 6 Hours",
-      "description": "Pay for three lessons to receive a discount. You save $45",
+      "description": "Pay for three lessons to receive a discount. <br /> You save $45",
       "price": 375,
       "fullPrice": 420,
       "savings": 45,
@@ -36,7 +36,7 @@
     {
       "name": "Explorer Pack",
       "duration": "5 Lessons - 10 Hours",
-      "description": "Pay for five lessons to receive a discount. You save $110",
+      "description": "Pay for five lessons to receive a discount. <br /> You save $110",
       "price": 590,
       "fullPrice": 700,
       "savings": 110,
@@ -47,7 +47,7 @@
     {
       "name": "Wheel Deal",
       "duration": "10 Lessons - 20 Hours",
-      "description": "Pay for ten lessons to receive a discount. You save $250",
+      "description": "Pay for ten lessons to receive a discount. <br /> You save $250",
       "price": 1150,
       "fullPrice": 1400,
       "savings": 250,
@@ -58,7 +58,7 @@
     {
       "name": "Road Warrior",
       "duration": "25 Lessons - 50 Hours",
-      "description": "Pay for twenty five lessons to receive a discount. You save $1,110",
+      "description": "Pay for twenty five lessons to receive a discount. <br /> You save $1,110",
       "price": 2490,
       "fullPrice": 3600,
       "savings": 1110,
@@ -69,7 +69,7 @@
     {
       "name": "Duo Spin-Test",
       "duration": "2 Lessons - 4 Hours",
-      "description": "4 hours of pre-test driving practice. You save $20",
+      "description": "4 hours of pre-test driving practice. <br /> You save $20",
       "price": 2600,
       "fullPrice": 2800,
       "savings": 20,
@@ -79,40 +79,76 @@
     }
   ],
   "listCardItems": [
-    { "id": "pickup", "label": "Pickup, drop-off across Las Vegas", "icon": "MapPin" },
+    {
+      "id": "pickup",
+      "label": "Pickup, drop-off across Las Vegas",
+      "icon": "MapPin"
+    },
     { "id": "dmv", "label": "DMV-certified instructors", "icon": "IdCard" },
-    { "id": "dual", "label": "Dual-control safety vehicles", "icon": "LockKeyhole" },
-    { "id": "personal", "label": "Personalized recommendations", "icon": "ClipboardPenLine" },
+    {
+      "id": "dual",
+      "label": "Dual-control safety vehicles",
+      "icon": "LockKeyhole"
+    },
+    {
+      "id": "personal",
+      "label": "Personalized recommendations",
+      "icon": "ClipboardPenLine"
+    },
     { "id": "no-fees", "label": "No hidden fees", "icon": "Ban" }
   ],
   "faqAccordionItems": [
     {
       "question": "What is the purpose of a behind-the-wheel lesson?",
-      "answerHtml": "Behind-the-wheel lessons give Nevada students real, hands-on driving experience. They’re designed to build skills and confidence needed to become safe, responsible drivers."
+      "answer": "Behind-the-wheel lessons give Nevada students real, hands-on driving experience. They’re designed to build skills and confidence needed to become safe, responsible drivers."
     },
     {
       "question": "Who can take a behind-the-wheel lesson?",
-      "answerHtml": "Teens, adults, and international drivers seeking Nevada driving experience are welcome. We tailor lessons to your skill level."
+      "answer": "Teens, adults, and international drivers seeking Nevada driving experience are welcome. We tailor lessons to your skill level."
     },
     {
       "question": "What will I learn in a behind-the-wheel lesson?",
-      "answerHtml": "Core vehicle control, lane changes, turns, speed & space management, defensive driving, parking, and route planning. Advanced packages add freeway and night driving."
+      "answer": "Core vehicle control, lane changes, turns, speed & space management, defensive driving, parking, and route planning. Advanced packages add freeway and night driving."
     },
     {
       "question": "How many lessons do I need?",
-      "answerHtml": "It depends on your starting level and confidence. Many students begin with a Starter or Explorer pack; we’ll recommend a plan after your first lesson."
+      "answer": "It depends on your starting level and confidence. Many students begin with a Starter or Explorer pack; we’ll recommend a plan after your first lesson."
     },
     {
       "question": "How much does it cost?",
-      "answerHtml": "See package pricing above. Multi-lesson packs include built-in savings and flexible scheduling."
+      "answer": "See package pricing above. Multi-lesson packs include built-in savings and flexible scheduling."
     }
   ],
   "locationListItems": [
-    "Las Vegas",
-    "North Las Vegas",
-    "Henderson",
-    "Summerlin",
-    "Paradise",
-    "Spring Valley"
+    {
+      "label": "Driving Lessons Areas",
+      "value": "Las Vegas | North Las Vegas | Henderson",
+      "icon": "LandPlot"
+    },
+    {
+      "label": "DMV Test Areas Covered",
+      "value": "Flamingo | Sahara | Decatur | Henderson",
+      "icon": "Map"
+    },
+    {
+      "label": "Driving Lessons Hours",
+      "value": "7 Days a Week, 9:00 AM – 9:00 PM",
+      "icon": "Calendar"
+    },
+    {
+      "label": "Contact Us",
+      "value": "Call or Text: (702) 747-5998",
+      "icon": "Phone"
+    },
+    {
+      "label": "Address",
+      "value": "5215 South Durango Drive Suite 2 <br /> Las Vegas Nevada 89113",
+      "icon": "MapPin"
+    },
+    {
+      "label": "Office Hours",
+      "value": "Monday – Friday: 9:00 AM – 4:00 PM <br /> Only by appointment",
+      "icon": "Clock"
+    }
   ]
 }

@@ -32,7 +32,7 @@ export const FaqSliceAccordion = ({
         {faqAccordionItems.map((item) => {
           return (
             <AccordionItem key={item.question} value={item.question}>
-              <AccordionTrigger className="text-lg md:text-xl font-semibold">
+              <AccordionTrigger className="text-lg md:text-xl font-medium">
                 {item.question}
               </AccordionTrigger>
               <AccordionContent className="text-base text-neutral-600">
