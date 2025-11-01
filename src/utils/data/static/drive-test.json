@@ -10,7 +10,6 @@
       "highlight": null,
       "acuityTypeId": 84523338,
       "stripePriceId": "price_1SLcOqDVE94tp07xKo88pGxz"
-
     },
     {
       "name": "Test Pack",
@@ -20,7 +19,7 @@
       "fullPrice": 520,
       "savings": 80,
       "highlight": null,
-       "acuityTypeId": 85028119
+      "acuityTypeId": 85028119
     },
     {
       "name": "Car Rental Only",
@@ -66,7 +65,7 @@
     },
     {
       "question": "How many mistakes are allowed on a drive test in Nevada?",
-      "answer": "Every driver begins with zero points and receives points for each mistake made during the test. To pass, you must finish the exam with fewer than 25 points."
+      "answer": "In Nevada, you can make a maximum of 15 minor driving faults, but zero serious or dangerous faults to pass the driving test. Any serious or dangerous fault, such as failing to stop at a stop sign or failing to yield to pedestrians, will result in an automatic failure of the test."
     },
     {
       "question": "What is the most common reason people fail in a drive test?",

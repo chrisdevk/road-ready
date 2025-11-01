@@ -1,4 +1,3 @@
-import BookingModal from "@/components/booking/BookingModal";
 import { Callout } from "@/components/callout";
 import { CardGrid } from "@/components/card-grid";
 import { FaqSliceAccordion } from "@/components/faq-slice-accordion";
@@ -46,7 +45,7 @@ export default function DriveTestPage() {
   return (
     <>
       <PageHero
-        heading="Stay Ready - Pass Easy"
+        heading="Stay Ready <br/> Pass Easy"
         subheading="Quick warm-up session, full plan, or just a car, we’ll lead you to your Drive Test calm and confident"
         color="black"
       />
@@ -87,7 +86,7 @@ export default function DriveTestPage() {
         buttonText="Book Now"
         buttonLink="#packages"
         color="sand"
-        buttonSlot={<BookingModal />}
+        // buttonSlot={<BookingModal />}
       />
     </>
   );

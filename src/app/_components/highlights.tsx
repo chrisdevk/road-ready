@@ -29,8 +29,8 @@ export const Highlights = ({
           </h2>
           <p className="text-center text-lg">
             Key Elements of <strong>Defensive Driving.</strong> It’s about
-            staying alert, prepared and in control. <br /> Here’s what we focus
-            on
+            staying alert, prepared and in control.{" "}
+            <br className="hidden md:block" /> Here’s what we focus on
           </p>
         </div>
         <HighlightStack highlights={highlights} />

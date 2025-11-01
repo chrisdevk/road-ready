@@ -48,8 +48,8 @@ export const MainNavigation = () => {
                 pathname === "/" ? "/svg/logo-white.svg" : "/svg/logo-black.svg"
               }
               alt="RoadReady"
-              width={100}
-              height={44}
+              width={80}
+              height={32}
             />
           </Link>
           <nav className="items-center gap-10 font-noto-sans hidden md:flex">
@@ -63,7 +63,11 @@ export const MainNavigation = () => {
               </Link>
             ))}
           </nav>
-          <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
+          <Hamburger
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            pathname={pathname}
+          />
         </div>
       </header>
       <AnimatePresence mode="wait">

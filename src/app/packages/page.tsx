@@ -1,3 +1,4 @@
+import BookingModal from "@/components/booking/BookingModal";
 import { Callout } from "@/components/callout";
 import { CardGrid } from "@/components/card-grid";
 import { FaqSliceAccordion } from "@/components/faq-slice-accordion";
@@ -5,7 +6,6 @@ import { ListCard } from "@/components/list-card";
 import { Location } from "@/components/location";
 import { PageHero } from "@/components/page-hero";
 import { Container } from "@/components/ui/container";
-import BookingModal from "@/components/booking/BookingModal";
 import packages from "@/utils/data/static/packages.json";
 import { Metadata } from "next";
 
@@ -52,7 +52,7 @@ export default async function PackagesPage() {
         color="black"
       />
 
-      <article className="mt-20 md:mt-40">
+      <article className="mt-20 md:mt-40" id="packages">
         <Container as="section" className="space-y-10">
           <div className="text-center space-y-5 lg:w-[772px] mx-auto">
             <h2>Choose Your Plan</h2>
@@ -100,7 +100,9 @@ export default async function PackagesPage() {
         heading="What Are You Waiting For?"
         subheading="Let’s Get You RoadReady"
         color="sand"
-        buttonSlot={<BookingModal />}
+        buttonText="Book Now"
+        buttonLink="#packages"
+        // buttonSlot={<BookingModal />}
       />
     </>
   );

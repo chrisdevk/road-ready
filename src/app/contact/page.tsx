@@ -41,7 +41,7 @@ export default function ContactPage() {
       <PageHero
         heading="Contact Us"
         subheading="Have questions about your lessons or test? We’re here to help!"
-        color="black"
+        color="primary"
       />
       <ContactForm />
       <Location locationListItems={data.locationListItems} />

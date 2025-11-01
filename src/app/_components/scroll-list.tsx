@@ -76,7 +76,7 @@ export const ScrollList = ({ scrollListItems }: ScrollListProps) => {
                   key={`${item.key}-set-${setIndex}`}
                   className="text-lg font-medium text-gray-800 flex items-center gap-2"
                 >
-                  <CircleCheck strokeWidth={1} className="text-primary" />
+                  <CircleCheck strokeWidth={1.5} className="text-primary" />
                   {item.value}
                 </div>
               ))}

@@ -8,8 +8,7 @@ import { Container } from "./ui/container";
 
 interface FaqItem {
   question: string;
-  answer?: string;      // plain text answer
-  answerHtml?: string;  // HTML answer
+  answer?: string;
 }
 
 interface FaqSliceAccordionProps {
@@ -31,22 +30,13 @@ export const FaqSliceAccordion = ({
         className="w-full"
       >
         {faqAccordionItems.map((item) => {
-          // Prefer HTML if present; fallback to plain answer
-          const htmlContent = item.answerHtml ?? "";
-          const textContent = item.answer ?? "";
-
           return (
             <AccordionItem key={item.question} value={item.question}>
               <AccordionTrigger className="text-lg md:text-xl font-semibold">
                 {item.question}
               </AccordionTrigger>
-
               <AccordionContent className="text-base text-neutral-600">
-                {htmlContent ? (
-                  <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-                ) : (
-                  <p>{textContent}</p>
-                )}
+                <div dangerouslySetInnerHTML={{ __html: item.answer ?? "" }} />
               </AccordionContent>
             </AccordionItem>
           );

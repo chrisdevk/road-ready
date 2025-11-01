@@ -54,7 +54,7 @@ export const TrialAccordion = ({
             )}
             <div className="relative bg-primary h-[260px] md:h-full md:hidden overflow-hidden rounded-2xl">
               <Image
-                src="/images/trial-lesson.jpg"
+                src="/images/person-driving.jpg"
                 alt="Trial lesson"
                 fill
                 className="rounded-2xl object-cover mt-4 ml-4"

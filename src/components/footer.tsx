@@ -18,13 +18,13 @@ export const Footer = () => {
               height={44}
             />
             <div className="flex gap-x-8 text-white">
-              <a href="#">
+              <a href="https://www.facebook.com/share/1BqMX4e4Ww/?mibextid=wwXIfr">
                 <Facebook size={32} strokeWidth={1.5} />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/roadready.vegas?igsh=MTBlMHBnMm5ucGo0Ng%3D%3D&utm_source=qr">
                 <Instagram size={32} strokeWidth={1.5} />
               </a>
-              <a href="#">
+              <a href="https://maps.app.goo.gl/LQc23boJ7tDeg7b97?g_st=ipc">
                 <Image
                   src="/svg/google.svg"
                   alt="Google"
@@ -37,7 +37,8 @@ export const Footer = () => {
           </div>
           <p className="text-white hidden md:block">
             Copyright © {date.getFullYear()}. All rights reserved. Road Ready
-            Driving School
+            Driving School. <br />
+            DMV License PRDS53720
           </p>
         </div>
         <div className="flex gap-x-28">
@@ -79,7 +80,7 @@ export const Footer = () => {
         </div>
         <p className="text-white text-center block md:hidden">
           Copyright © {date.getFullYear()}. All rights reserved. Road Ready
-          Driving School
+          Driving School. DMV License PRDS53720
         </p>
       </Container>
     </footer>

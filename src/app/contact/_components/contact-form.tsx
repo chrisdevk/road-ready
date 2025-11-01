@@ -44,7 +44,7 @@ export const ContactForm = () => {
               name="firstName"
               render={({ field }) => (
                 <FormItem className="col-span-2 md:col-span-1">
-                  <FormLabel>First Name</FormLabel>
+                  <FormLabel>First Name*</FormLabel>
                   <FormControl>
                     <Input type="text" {...field} />
                   </FormControl>
@@ -57,7 +57,7 @@ export const ContactForm = () => {
               name="lastName"
               render={({ field }) => (
                 <FormItem className="col-span-2 md:col-span-1">
-                  <FormLabel>Last Name</FormLabel>
+                  <FormLabel>Last Name*</FormLabel>
                   <FormControl>
                     <Input type="text" {...field} />
                   </FormControl>
@@ -71,7 +71,7 @@ export const ContactForm = () => {
               name="email"
               render={({ field }) => (
                 <FormItem className="col-span-2 md:col-span-1">
-                  <FormLabel>Email address</FormLabel>
+                  <FormLabel>Email address*</FormLabel>
                   <FormControl>
                     <Input type="email" {...field} />
                   </FormControl>
@@ -84,7 +84,7 @@ export const ContactForm = () => {
               name="phone"
               render={({ field }) => (
                 <FormItem className="col-span-2 md:col-span-1">
-                  <FormLabel>Phone number</FormLabel>
+                  <FormLabel>Phone number*</FormLabel>
                   <FormControl>
                     <Input type="tel" maxLength={15} {...field} />
                   </FormControl>
@@ -97,7 +97,7 @@ export const ContactForm = () => {
               name="message"
               render={({ field }) => (
                 <FormItem className="col-span-2">
-                  <FormLabel>Message</FormLabel>
+                  <FormLabel>Message*</FormLabel>
                   <FormControl>
                     <Textarea {...field} className="min-h-52" />
                   </FormControl>

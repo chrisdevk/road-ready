@@ -57,7 +57,7 @@ export default function Home() {
       />
       <ListCard
         listCardItems={data.listCardItems}
-        imageSrc="/images/person-driving.jpg"
+        imageSrc="/images/trial-lesson.jpg"
         imageAlt="Person driving"
       />
       <TrialSection trialAccordionItems={data.trialAccordionItems} />

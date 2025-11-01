@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export const HeroCallout = () => {
   return (
@@ -8,14 +9,18 @@ export const HeroCallout = () => {
         <span className="font-noto-sans text-xl font-bold">
           Driving Lessons
         </span>
-        <Button variant="secondary" className="">
-          Choose Plan <ArrowUpRight />
+        <Button variant="secondary" className="" asChild>
+          <Link href="/packages">
+            Choose Plan <ArrowUpRight />
+          </Link>
         </Button>
       </div>
       <div className="flex flex-col items-center gap-y-3">
         <span className="font-noto-sans text-xl font-bold">Drive Test</span>
-        <Button variant="secondary">
-          Get Ready <ArrowUpRight />
+        <Button variant="secondary" asChild>
+          <Link href="/drive-test">
+            Get Ready <ArrowUpRight />
+          </Link>
         </Button>
       </div>
     </div>

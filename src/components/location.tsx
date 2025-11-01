@@ -1,5 +1,5 @@
+import { LocationList } from "@/components/location-list";
 import { Container } from "@/components/ui/container";
-import LocationList from "./location-list"; // 
 
 interface LocationProps {
   locationListItems: {

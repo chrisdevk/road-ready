@@ -14,16 +14,28 @@ export const Hero = () => {
       >
         Take the Wheel <br /> Own the Road
       </motion.h1>
-      <motion.p
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9, delay: 0.3 }}
-      >
-        Las Vegas Driving School <br />
-        Our DMV-certified instructors help you become a skilled and
-        <br className="hidden md:block" />
-        responsible driver by offering tailored behind-the-wheel lessons
-      </motion.p>
+      <div>
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.3 }}
+          className="text-lg lg:text-xl"
+        >
+          <span>Driving Lessons in Las Vegas</span> <br />
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.3 }}
+          className="text-lg lg:text-xl mt-3.5"
+        >
+          <span>
+            Our DMV-certified instructors help you become a skilled and
+            <br className="hidden md:block" />
+            responsible driver by offering tailored behind-the-wheel lessons
+          </span>
+        </motion.p>
+      </div>
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}

@@ -22,7 +22,7 @@ export const ListItem = ({
       </div>
       <div className="flex flex-col gap-y-2">
         <h3>{heading}</h3>
-        <p>{subheading}</p>
+        <p className="text-neutral-700">{subheading}</p>
       </div>
     </li>
   );

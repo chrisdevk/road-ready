@@ -36,7 +36,7 @@ export const TrialSection = ({ trialAccordionItems }: TrialSectionProps) => {
         <TrialAccordion trialAccordionItems={trialAccordionItems} />
         <div className="relative col-span-2 md:col-span-1 bg-primary h-full overflow-hidden rounded-2xl">
           <Image
-            src="/images/trial-lesson.jpg"
+            src="/images/person-driving.jpg"
             alt="Trial lesson"
             fill
             className="rounded-2xl object-cover mt-4 ml-4"
