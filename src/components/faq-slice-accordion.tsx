@@ -21,9 +21,8 @@ export const FaqSliceAccordion = ({
   heading,
 }: FaqSliceAccordionProps) => {
   return (
-    <Container as="section" className="mt-20 md:mt-40 space-y-10">
+    <Container as="section" className="mt-20 md:mt-40 space-y-10 max-w-4xl">
       {heading && <h2 className="text-center">{heading}</h2>}
-
       <Accordion
         type="single"
         defaultValue={faqAccordionItems[0]?.question}

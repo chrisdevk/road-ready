@@ -2,7 +2,6 @@
 
 import { Hamburger } from "@/components/main-navigation/hamburger";
 import { Menu } from "@/components/main-navigation/menu";
-import { cn } from "@/lib/cn";
 import menu from "@/utils/data/static/menu.json";
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
@@ -24,24 +23,37 @@ export const MainNavigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const getHeaderClasses = () => {
+    const baseClasses =
+      "max-w-[1256px] w-full mx-auto px-4 flex items-center justify-between transition-all duration-300 rounded-b-2xl";
+    const isHomePage = pathname === "/";
+    const isHomeNotScrolled = isHomePage && !scrolled;
+    const shouldShowScrolledStyle = scrolled && !isOpen;
+
+    let classes = baseClasses;
+
+    if (isHomeNotScrolled) {
+      classes += " pt-8 pb-5 text-white";
+    } else {
+      classes += " pt-5";
+      classes += shouldShowScrolledStyle ? " pb-4" : " pb-5";
+    }
+
+    if (shouldShowScrolledStyle) {
+      if (isHomePage) {
+        classes += " bg-black/30 backdrop-blur-lg text-white px-5";
+      } else {
+        classes += " bg-white text-black shadow";
+      }
+    }
+
+    return classes;
+  };
+
   return (
     <>
-      <header
-        className={cn(
-          "fixed top-0 left-0 z-50 w-full",
-          pathname === "/" ? "text-white" : "bg-white text-black"
-        )}
-      >
-        <div
-          className={cn(
-            "max-w-[1256px] w-full mx-auto px-4 flex items-center justify-between pt-8 pb-5 transition-all duration-300 rounded-b-2xl",
-            pathname === "/" && !scrolled ? "pt-8" : "pt-5",
-            scrolled &&
-              !isOpen &&
-              pathname === "/" &&
-              "bg-black/30 backdrop-blur-lg text-white pt-5 px-5"
-          )}
-        >
+      <header className="fixed top-0 left-0 z-50 w-full">
+        <div className={getHeaderClasses()}>
           <Link href="/">
             <Image
               src={
