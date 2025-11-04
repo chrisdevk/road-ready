@@ -6,7 +6,7 @@
       "items": [
         {
           "question": "Is RoadReady Driving School a licensed school in Nevada?",
-          "answer": "Yes. The school is licensed by the Nevada DMV under license number PRDS00053720."
+          "answer": "Yes. The school is licensed by the Nevada DMV under license number PRDS53720."
         },
         {
           "question": "What areas does the school operate?",
@@ -102,7 +102,7 @@
         },
         {
           "question": "How soon and where can I schedule a DMV driving test?",
-          "answer": "DMV driving test appointments are typically booked 6–8 weeks in advance. Schedule your test at <a href=\"https://dmvapp.nv.gov/DMV/DL/DriveTestSchedulerPublic/DriveTest_Input.aspx\" target=\"_blank\" rel=\"noopener noreferrer\">the Nevada DMV scheduler</a>."
+          "answer": "DMV driving test appointments are typically booked 6–8 weeks in advance. Schedule your test at <a href='https://dmv.nv.gov/appointments.htm' target=\"_blank\" rel=\"noopener noreferrer\">the Nevada DMV scheduler</a>."
         },
         {
           "question": "Can I rent a car for my DMV driving test?",

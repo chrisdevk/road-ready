@@ -62,7 +62,7 @@ export default function Home() {
       />
       <TrialSection trialAccordionItems={data.trialAccordionItems} />
       <Callout
-        heading="Behind-The-Wheel Lessons are available 7 days a week"
+        heading="Behind-The-Wheel Lessons <br/> are available 7 days a week"
         buttonText="Choose Plan"
         buttonLink="/packages"
         color="primary"

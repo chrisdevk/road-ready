@@ -24,8 +24,8 @@ export const FaqAccordion = ({ title, items, id }: FaqAccordionProps) => {
             <AccordionTrigger className="text-lg md:text-xl font-semibold">
               {item.question}
             </AccordionTrigger>
-            <AccordionContent className="text-base">
-              {item.answer}
+            <AccordionContent className="text-base [&_a]:text-primary [&_a:hover]:underline">
+              <div dangerouslySetInnerHTML={{ __html: item.answer }} />
             </AccordionContent>
           </AccordionItem>
         ))}
