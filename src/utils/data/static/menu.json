@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Packages",
+      "href": "/packages"
+    },
+    {
+      "label": "Drive Test",
+      "href": "/drive-test"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "FAQ",
+      "href": "/faq"
+    }
+  ]
+}

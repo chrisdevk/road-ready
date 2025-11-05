@@ -1,0 +1,44 @@
+{
+  "policies": [
+    {
+      "heading": "Package Payment Policy",
+      "subheading": "All packages require full payment for the entire package before scheduling. You can register, pay and schedule online, or call our office (702) 747-5998 to pay, register and schedule over the phone if you prefer."
+    },
+    {
+      "heading": "Refund Policy",
+      "subheading": "If a refund is requested after lessons or packages are purchased, there is a $40 administrative fee to process the refund. No refunds are issued after six month from the date of purchase. Refunds take 5-10 business days for processing."
+    },
+    {
+      "heading": "Lessons Cancellation",
+      "subheading": "24 hours notice is required to cancel a driving lesson without penalty. If you cancel with less than 24 hours notice but no later than 3 hours before your lesson, there will be a $80 charge for rescheduling."
+    },
+    {
+      "heading": "Lateness Policy",
+      "subheading": "If you arrive late, up to 15 minutes past the start time, the lesson will still end at the scheduled stop time."
+    },
+    {
+      "heading": "No-Show Policy",
+      "subheading": "If you are more than 15 minutes late without prior notice, the lesson will be considered a no-show. No rescheduling or refund will be provided, and the lesson is forfeited."
+    },
+    {
+      "heading": "Permit/License Requirements",
+      "subheading": "If you do not have a valid Nevada Learner's Permit, Driver's License or International License in your possession at the time of the lesson, the lesson cannot be given. There will be a $80 charge for the lesson to be rescheduled."
+    },
+    {
+      "heading": "Please Note",
+      "subheading": "Late cancellations or lessons cancelled due to no-show or no permit/license result in a loss of income to instructors and our driving school that cannot be recovered otherwise."
+    },
+    {
+      "heading": "Certificate of Completion",
+      "subheading": "After 3 lessons/6 hours of behind-the-wheel driving lessons are completed, RoadReady Driving School will issue a Certificate of Completion. This may be helpful with car insurance; check with your provider."
+    },
+    {
+      "heading": "Prices",
+      "subheading": "Prices are effective at the time of purchase. Prices are subject to change without notice."
+    },
+    {
+      "heading": "Expiration",
+      "subheading": "All packages expire six months from the date of purchase."
+    }
+  ]
+}

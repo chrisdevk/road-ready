@@ -1,0 +1,140 @@
+{
+  "sections": [
+    {
+      "id": "general-information",
+      "title": "General Information",
+      "items": [
+        {
+          "question": "Is RoadReady Driving School a licensed school in Nevada?",
+          "answer": "Yes. The school is licensed by the Nevada DMV under license number PRDS53720."
+        },
+        {
+          "question": "What areas does the school operate?",
+          "answer": "RoadReady serves the entire Las Vegas area, including Summerlin, North Las Vegas, and Henderson."
+        },
+        {
+          "question": "What days and hours are driving lessons available?",
+          "answer": "Lessons are available 7 days a week from 10 AM to 7 PM."
+        }
+      ]
+    },
+    {
+      "id": "lessons-vehicles",
+      "title": "Lessons & Vehicles",
+      "items": [
+        {
+          "question": "Do I need to come to an office for lessons?",
+          "answer": "No. The instructor comes to you—home, school, or workplace—and returns you after the lesson."
+        },
+        {
+          "question": "Who provides the vehicles?",
+          "answer": "Lessons are conducted in school vehicles equipped with dual controls. Free pick‑up and drop‑off are included in every lesson and package."
+        },
+        {
+          "question": "Are the vehicles DMV-certified and insured?",
+          "answer": "Yes, all vehicles are fully insured and certified by the DMV."
+        },
+        {
+          "question": "Does the instructor have a dual brake pedal?",
+          "answer": "Yes, all vehicles are equipped with instructor‑side brake pedals."
+        },
+        {
+          "question": "What screenings do the driving instructors go through?",
+          "answer": "All instructors pass a background check, driving record screening, DMV testing, FBI fingerprinting, and are licensed as certified driving instructors."
+        }
+      ]
+    },
+    {
+      "id": "students-requirements",
+      "title": "Students & Requirements",
+      "items": [
+        {
+          "question": "How old do I have to be to start lessons?",
+          "answer": "The minimum age is 15 years and 6 months with a valid learner’s permit."
+        },
+        {
+          "question": "What should I bring to the lesson?",
+          "answer": "Bring your learner’s permit or driver’s license, wear comfortable clothing and flat‑soled shoes. Sunglasses are recommended."
+        },
+        {
+          "question": "Can I have my phone with me during the lesson?",
+          "answer": "Yes, but it must be on silent mode."
+        },
+        {
+          "question": "Can I take a break during the lesson?",
+          "answer": "Absolutely. You can request a stop for a restroom break or to rest at any time."
+        }
+      ]
+    },
+    {
+      "id": "payments-packages",
+      "title": "Payments & Packages",
+      "items": [
+        {
+          "question": "What forms of payment are accepted?",
+          "answer": "We accept credit and debit cards. Cash and checks are not accepted."
+        },
+        {
+          "question": "Do you offer payment plans?",
+          "answer": "No. All lessons must be paid in advance. Additional lessons can be purchased individually at a proportional rate after completing a package."
+        },
+        {
+          "question": "Can I reschedule a lesson?",
+          "answer": "Yes, as long as you notify us at least 24 hours in advance."
+        },
+        {
+          "question": "What happens if I’m late?",
+          "answer": "The lesson will still end at the scheduled time, and the missed time won’t be made up."
+        },
+        {
+          "question": "What happens if I cancel last minute or don’t show up?",
+          "answer": "If you don’t give at least 24 hours’ notice, the lesson will be considered completed."
+        }
+      ]
+    },
+    {
+      "id": "certificates-dmv-test",
+      "title": "Certificates & DMV Test",
+      "items": [
+        {
+          "question": "Do you provide a certificate after completing lessons?",
+          "answer": "Yes. A certificate is issued after a minimum of 6 hours of driving and can be used for insurance discounts."
+        },
+        {
+          "question": "How soon and where can I schedule a DMV driving test?",
+          "answer": "DMV driving test appointments are typically booked 6–8 weeks in advance. Schedule your test at <a href='https://dmv.nv.gov/appointments.htm' target=\"_blank\" rel=\"noopener noreferrer\">the Nevada DMV scheduler</a>."
+        },
+        {
+          "question": "Can I rent a car for my DMV driving test?",
+          "answer": "Yes, RoadReady offers a car rental with pick‑up and drop‑off service for the day of your driving test."
+        },
+        {
+          "question": "Is the instructor present during the DMV test?",
+          "answer": "No. During the actual DMV test, only the examiner and the student are allowed in the vehicle."
+        }
+      ]
+    }
+  ],
+  "tableOfContent": [
+    {
+      "label": "General Information",
+      "value": "general-information"
+    },
+    {
+      "label": "Lessons & Vehicles",
+      "value": "lessons-vehicles"
+    },
+    {
+      "label": "Students & Requirements",
+      "value": "students-requirements"
+    },
+    {
+      "label": "Payments & Packages",
+      "value": "payments-packages"
+    },
+    {
+      "label": "Certificates & DMV Test",
+      "value": "certificates-dmv-test"
+    }
+  ]
+}
