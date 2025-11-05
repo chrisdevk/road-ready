@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const Hero = () => {
   return (
-    <section className="h-screen text-center bg-[url('/images/hero-img.jpg')] bg-cover bg-center text-white">
+    <section className="h-screen text-center bg-[url('/images/hero-img.webp')] bg-cover bg-center text-white">
       <Container className="flex flex-col items-center justify-center gap-10 h-full">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
