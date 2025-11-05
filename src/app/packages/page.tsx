@@ -1,4 +1,3 @@
-import BookingModal from "@/components/booking/BookingModal";
 import { Callout } from "@/components/callout";
 import { CardGrid } from "@/components/card-grid";
 import { FaqSliceAccordion } from "@/components/faq-slice-accordion";
@@ -77,7 +76,7 @@ export default async function PackagesPage() {
         heading="Not Sure Where to Start?"
         subheading="Start with our $99 Trial Lesson <br /> Check your current level and get expert guidance for your training plan"
         color="primary"
-        buttonSlot={<BookingModal />}
+        buttonVariant="modal"
       />
       <Location locationListItems={data.locationListItems} />
       <Callout

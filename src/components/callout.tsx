@@ -3,15 +3,15 @@ import { Container } from "@/components/ui/container";
 import { cn } from "@/lib/cn";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import { BookingModalClient } from "./booking/booking-modal.client";
 
 interface CalloutProps {
   heading: string;
   subheading?: string;
   buttonText?: string;
   buttonLink?: string;
+  buttonVariant?: "link" | "modal";
   color: "primary" | "sand";
-  buttonSlot?: React.ReactNode;
 }
 
 export const Callout = ({
@@ -19,8 +19,8 @@ export const Callout = ({
   subheading,
   buttonText,
   buttonLink,
+  buttonVariant,
   color,
-  buttonSlot,
 }: CalloutProps) => {
   return (
     <section
@@ -37,12 +37,16 @@ export const Callout = ({
       >
         <h2 dangerouslySetInnerHTML={{ __html: heading }} />
         {!!subheading && <p dangerouslySetInnerHTML={{ __html: subheading }} />}
-
-        {/* Prefer custom slot if provided */}
-        {buttonSlot ? (
-          <div className="mt-2">{buttonSlot}</div>
+        {buttonVariant === "modal" ? (
+          <BookingModalClient
+            buttonText="Trial Lesson $99"
+            buttonVariant={color === "primary" ? "secondary" : "default"}
+          />
         ) : buttonText && buttonLink ? (
-          <Button asChild variant={color === "primary" ? "secondary" : "default"}>
+          <Button
+            asChild
+            variant={color === "primary" ? "secondary" : "default"}
+          >
             <Link href={buttonLink}>
               {buttonText}
               <ArrowUpRight />
