@@ -1,9 +1,8 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { BookingModalClient } from "@/components/booking/booking-modal.client";
 import { Container } from "@/components/ui/container";
 import { motion } from "motion/react";
-import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -44,9 +43,11 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.6 }}
         >
-          <Button asChild>
-            <Link href="/packages">Book now</Link>
-          </Button>
+          <BookingModalClient
+            buttonText="Book now"
+            buttonVariant="default"
+            name="Lessons & Packages"
+          />
         </motion.div>
       </Container>
     </section>

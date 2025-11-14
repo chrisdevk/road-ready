@@ -57,7 +57,7 @@ export default async function PackagesPage() {
             <p>
               Select the training package that fits your needs. Learn at your
               own pace with DMV-licensed instructors, and build the skills and
-              confidence to drive safely and independently.
+              confidence to drive safely and independently
             </p>
           </div>
           <CardGrid packages={data.packages} />

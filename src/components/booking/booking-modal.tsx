@@ -42,9 +42,13 @@ export default function BookingModal() {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center" role="dialog" aria-modal="true">
+    <div
+      className="fixed inset-0 z-[9999] flex items-center justify-center"
+      role="dialog"
+      aria-modal="true"
+    >
       <div className="absolute inset-0 bg-black/50" onClick={close} />
-      <div className="relative z-10 w-full max-w-4xl bg-white rounded-2xl shadow-xl overflow-hidden">
+      <div className="relative z-10 w-full max-w-4xl bg-white shadow-xl overflow-hidden">
         <button
           type="button"
           aria-label="Close"
@@ -75,7 +79,6 @@ export default function BookingModal() {
               Missing NEXT_PUBLIC_ACUITY_OWNER_ID
             </div>
           )}
-        
         </div>
       </div>
     </div>

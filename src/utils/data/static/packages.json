@@ -58,24 +58,13 @@
     {
       "name": "Road Warrior",
       "duration": "25 Lessons - 50 Hours",
-      "description": "Pay for twenty five lessons to receive a discount. <br /> You save $1,110",
+      "description": "Pay for twenty five lessons to receive a discount. You save $1,110",
       "price": 2490,
       "fullPrice": 3600,
       "savings": 1110,
       "highlight": null,
       "acuityTypeId": 84906804,
       "stripePriceId": "price_1SLd6XDVE94tp07xYQixRYO8"
-    },
-    {
-      "name": "Duo Spin-Test",
-      "duration": "2 Lessons - 4 Hours",
-      "description": "4 hours of pre-test driving practice. <br /> You save $20",
-      "price": 2600,
-      "fullPrice": 2800,
-      "savings": 20,
-      "highlight": null,
-      "acuityTypeId": 84523338,
-      "stripePriceId": "price_1SLcOqDVE94tp07xKo88pGxz"
     }
   ],
   "listCardItems": [

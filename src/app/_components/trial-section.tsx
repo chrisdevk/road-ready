@@ -29,7 +29,10 @@ export const TrialSection = ({ trialAccordionItems }: TrialSectionProps) => {
               direction you need to move forward with ease
             </p>
           </div>
-          <BookingModalClient buttonText="Trial Lesson $99" />
+          <BookingModalClient
+            buttonText="Trial Lesson $99"
+            appointmentTypeId={83262547}
+          />
         </Container>
         <Container as="section" className="grid grid-cols-2 gap-x-13">
           <TrialAccordion trialAccordionItems={trialAccordionItems} />

@@ -72,8 +72,9 @@ export default function Home() {
         heading="What Are You Waiting For?"
         subheading="Let’s Get You RoadReady"
         buttonText="Book Now"
-        buttonLink="/packages"
+        buttonVariant="modal"
         color="sand"
+        name="Lessons & Packages"
       />
     </>
   );

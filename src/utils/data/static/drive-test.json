@@ -14,7 +14,7 @@
     {
       "name": "Test Pack",
       "duration": "2 lessons + Car Rental",
-      "description": "4 hours of pre-test driving practice 3 hour car rental. You save $80",
+      "description": "4 hours of pre-test driving practice <br/> 3 hour car rental. You save $80",
       "price": 440,
       "fullPrice": 520,
       "savings": 80,

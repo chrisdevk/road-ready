@@ -20,7 +20,9 @@ export const PhoneBubble = () => {
             transition={{ duration: 0.3 }}
             className="text-white whitespace-nowrap overflow-hidden"
           >
-            <span className="px-3">(702) 747-5998</span>
+            <a href="tel:(702) 747-5998" className="px-3 text-white">
+              (702) 747-5998
+            </a>
           </motion.p>
         )}
       </AnimatePresence>

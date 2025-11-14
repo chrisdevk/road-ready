@@ -45,7 +45,8 @@ export const Footer = () => {
           <ul className="flex flex-col gap-y-4 text-white">
             {menu.links.map(
               (link, i) =>
-                i !== menu.links.length - 1 && (
+                i !== menu.links.length - 1 &&
+                link.label !== "Contact" && (
                   <li key={link.label}>
                     <Link
                       href={link.href}
@@ -72,6 +73,14 @@ export const Footer = () => {
                 className="transition-colors hover:text-primary"
               >
                 FAQ
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="transition-colors hover:text-primary"
+              >
+                Contact
               </Link>
             </li>
           </ul>

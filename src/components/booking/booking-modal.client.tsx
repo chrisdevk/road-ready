@@ -11,17 +11,23 @@ const TRIAL_TYPE_ID = process.env.NEXT_PUBLIC_ACUITY_TRIAL_TYPE_ID;
 interface BookingModalClientProps {
   buttonText: string;
   buttonVariant?: "default" | "secondary";
+  appointmentTypeId?: number | string;
+  name?: string;
 }
 
 export const BookingModalClient = ({
   buttonText,
   buttonVariant = "default",
+  appointmentTypeId,
+  name,
 }: BookingModalClientProps) => {
   const { open } = useBookingModal();
   const handleTrialClick = useCallback(() => {
     open({
-      name: "Trial Lesson",
-      appointmentTypeId: TRIAL_TYPE_ID ? Number(TRIAL_TYPE_ID) : undefined,
+      name: name ?? "Trial Lesson",
+      appointmentTypeId:
+        appointmentTypeId ??
+        (TRIAL_TYPE_ID ? Number(TRIAL_TYPE_ID) : undefined),
     });
   }, [open]);
   return (

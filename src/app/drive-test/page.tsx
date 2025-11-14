@@ -73,7 +73,7 @@ export default function DriveTestPage() {
         heading="Drive Test FAQ"
       />
       <Callout
-        heading="Looking for more options?"
+        heading="LOOKING FOR MORE OPTIONS?"
         subheading="See all driving lesson packages"
         color="primary"
         buttonText="Choose Plan"
@@ -84,9 +84,9 @@ export default function DriveTestPage() {
         heading="Ready to Pass With Confidence?"
         subheading="Choose your plan and secure your test day"
         buttonText="Book Now"
-        buttonLink="#packages"
+        buttonVariant="modal"
+        name="Lessons & Packages"
         color="sand"
-        // buttonSlot={<BookingModal />}
       />
     </>
   );

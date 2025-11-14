@@ -12,6 +12,8 @@ interface CalloutProps {
   buttonLink?: string;
   buttonVariant?: "link" | "modal";
   color: "primary" | "sand";
+  appointmentTypeId?: number | string;
+  name?: string;
 }
 
 export const Callout = ({
@@ -21,6 +23,8 @@ export const Callout = ({
   buttonLink,
   buttonVariant,
   color,
+  appointmentTypeId,
+  name,
 }: CalloutProps) => {
   return (
     <section
@@ -39,7 +43,9 @@ export const Callout = ({
         {!!subheading && <p dangerouslySetInnerHTML={{ __html: subheading }} />}
         {buttonVariant === "modal" ? (
           <BookingModalClient
-            buttonText="Trial Lesson $99"
+            buttonText={buttonText ?? "Trial Lesson $99"}
+            appointmentTypeId={appointmentTypeId}
+            name={name}
             buttonVariant={color === "primary" ? "secondary" : "default"}
           />
         ) : buttonText && buttonLink ? (
