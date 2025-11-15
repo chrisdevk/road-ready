@@ -19,8 +19,8 @@
       "fullPrice": 280,
       "savings": 20,
       "highlight": null,
-      "acuityTypeId": 84523338,
-      "stripePriceId": "price_1SLcOqDVE94tp07xKo88pGxz"
+      "acuityTypeId": 85671450,
+      "stripePriceId": "price_1S5zdEDIurqktwE4gTE4Y9PD"
     },
     {
       "name": "Starter Pack",
@@ -30,8 +30,8 @@
       "fullPrice": 420,
       "savings": 45,
       "highlight": null,
-      "acuityTypeId": 84523510,
-      "stripePriceId": "price_1SLcYGDVE94tp07x3LTrqAoU"
+      "acuityTypeId": 85671786,
+      "stripePriceId": "price_1S5ze9DIurqktwE4qR4octj6"
     },
     {
       "name": "Explorer Pack",
@@ -41,8 +41,8 @@
       "fullPrice": 700,
       "savings": 110,
       "highlight": "Most Popular",
-      "acuityTypeId": 84523588,
-      "stripePriceId": "price_1SLcsQDVE94tp07xuY5Vcv2n_444"
+      "acuityTypeId": 85671867,
+      "stripePriceId": "price_1S5zfJDIurqktwE439CTDrXT"
     },
     {
       "name": "Wheel Deal",
@@ -52,8 +52,8 @@
       "fullPrice": 1400,
       "savings": 250,
       "highlight": "Smart Choice",
-      "acuityTypeId": 5555555,
-      "stripePriceId": "price_wheel_deal_price_1SLcwtDVE94tp07xdIQAESUG"
+      "acuityTypeId": 85671954,
+      "stripePriceId": "price_1S5zhfDIurqktwE4nvTDeRmc"
     },
     {
       "name": "Road Warrior",
@@ -63,8 +63,8 @@
       "fullPrice": 3600,
       "savings": 1110,
       "highlight": null,
-      "acuityTypeId": 84906804,
-      "stripePriceId": "price_1SLd6XDVE94tp07xYQixRYO8"
+      "acuityTypeId": 85672009,
+      "stripePriceId": "price_1S5zj5DIurqktwE4dqDV9fLm"
     }
   ],
   "listCardItems": [
