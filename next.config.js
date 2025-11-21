@@ -16,14 +16,14 @@ const nextConfig = {
 
               // Stripe.js needs to run; 'unsafe-eval' is often required in dev.
               // You can try removing 'unsafe-eval' in production if everything still works.
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.stripe.com",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.stripe.com https://www.googletagmanager.com",
 
               "style-src 'self' 'unsafe-inline'",
-              "img-src 'self' data: https:",
+              "img-src 'self' data: https: https://www.google-analytics.com",
               "font-src 'self' data:",
 
               // XHR / fetch targets used by Acuity + Stripe
-              "connect-src 'self' https://api.stripe.com https://checkout.stripe.com https://q.stripe.com https://app.acuityscheduling.com",
+              "connect-src 'self' https://api.stripe.com https://checkout.stripe.com https://q.stripe.com https://app.acuityscheduling.com https://www.google-analytics.com https://www.googletagmanager.com",
 
               // Allow iframes for Acuity scheduler + Stripe + (optional) Google Maps
               "frame-src https://app.acuityscheduling.com https://js.stripe.com https://checkout.stripe.com https://www.google.com https://maps.google.com https://www.google.com/maps",

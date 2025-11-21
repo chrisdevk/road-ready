@@ -6,6 +6,7 @@ import { cn } from "@/lib/cn";
 import { notoSans, poppins } from "@/lib/fonts";
 import testimonials from "@/utils/data/static/testimonials.json";
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -21,6 +22,20 @@ export default function RootLayout({
   const data = testimonials;
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-ND8E1M0Z6B"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-ND8E1M0Z6B');
+          `}
+        </Script>
+      </head>
       <body className={cn(notoSans.variable, poppins.variable)}>
         <MainNavigation />
         {children}
