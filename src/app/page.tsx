@@ -13,32 +13,39 @@ export const revalidate = 86400; // 1 day
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Road Ready Driving School",
+    title: "RoadReady Driving School",
     description:
       "Las Vegas Driving School - Our DMV-certified instructors help you become a skilled and responsible driver by offering tailored behind-the-wheel lessons",
     keywords:
       "Las Vegas Driving School, DMV-certified instructors, behind-the-wheel lessons, driving lessons, driving test, driving license, driver's education, driver's training, driver's ed, driver's education program, driver's training program, driver's ed program, driver's education course, driver's training course, driver's ed course, driver's education program, driver's training program, driver's ed program, driver's education course, driver's training course, driver's ed course",
-    authors: [{ name: "Road Ready Driving School" }],
+    authors: [{ name: "RoadReady Driving School" }],
     robots: {
       index: true,
       follow: true,
     },
     openGraph: {
-      title: "Road Ready Driving School",
+      title: "RoadReady Driving School",
       description:
         "Las Vegas Driving School - Our DMV-certified instructors help you become a skilled and responsible driver by offering tailored behind-the-wheel lessons",
-      url: "https://roadready.com",
-      siteName: "Road Ready Driving School",
+      url: "https://roadreadyvegas.com",
+      siteName: "RoadReady Driving School",
       images: [
         {
-          url: "/images/hero-img.jpg",
+          url: "https://roadreadyvegas.com/images/hero-img.jpg",
           width: 1200,
           height: 630,
-          alt: "Road Ready Driving School",
+          alt: "RoadReady Driving School",
         },
       ],
       type: "website",
       locale: "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "RoadReady Driving School",
+      description:
+        "Las Vegas Driving School - Our DMV-certified instructors help you become a skilled and responsible driver by offering tailored behind-the-wheel lessons",
+      images: ["https://roadreadyvegas.com/images/hero-img.jpg"],
     },
   };
 }
@@ -62,7 +69,7 @@ export default function Home() {
       />
       <TrialSection trialAccordionItems={data.trialAccordionItems} />
       <Callout
-        heading="Behind-The-Wheel Lessons <br/> are available 7 days a week"
+        heading="Behind-The-Wheel Lessons <br class='md:hidden' /> are available 7 days a week"
         buttonText="Choose Plan"
         buttonLink="/packages"
         color="primary"

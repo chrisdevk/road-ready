@@ -33,7 +33,7 @@ export const List = ({ listItems }: ListProps) => {
         <h2>Why Choose RoadReady Driving School?</h2>
         <ListSection
           items={listItems.slice(0, 3)}
-          imageSrc="/images/la-palms.jpg"
+          imageSrc="/images/vegas-road.jpg"
           imageAlt="Why Choose RoadReady Driving School?"
           imagePosition="right"
           imageClasses="rounded-br-2xl rounded-tl-2xl object-cover z-10 ml-4 mt-4"

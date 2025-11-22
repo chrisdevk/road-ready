@@ -22,18 +22,25 @@ export function generateMetadata(): Metadata {
       title: "FAQ — RoadReady Driving School",
       description:
         "Common questions about lessons, vehicles, and the RoadReady app.",
-      url: "https://roadready.com",
-      siteName: "Road Ready Driving School",
+      url: "https://roadreadyvegas.com",
+      siteName: "RoadReady Driving School",
       images: [
         {
-          url: "/images/hero-img.jpg",
+          url: "https://roadreadyvegas.com/images/hero-img.jpg",
           width: 1200,
           height: 630,
-          alt: "Road Ready Driving School",
+          alt: "RoadReady Driving School",
         },
       ],
       type: "website",
       locale: "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "RoadReady Driving School",
+      description:
+        "Las Vegas Driving School - Our DMV-certified instructors help you become a skilled and responsible driver by offering tailored behind-the-wheel lessons",
+      images: ["https://roadreadyvegas.com/images/hero-img.jpg"],
     },
   };
 }

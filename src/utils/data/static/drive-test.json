@@ -8,8 +8,8 @@
       "fullPrice": 280,
       "savings": 20,
       "highlight": null,
-      "acuityTypeId": 84523338,
-      "stripePriceId": "price_1SLcOqDVE94tp07xKo88pGxz"
+      "acuityTypeId": 85671450,
+      "stripePriceId": "price_1S5zdEDIurqktwE4gTE4Y9PD"
     },
     {
       "name": "Test Pack",
@@ -29,7 +29,7 @@
       "fullPrice": null,
       "savings": null,
       "highlight": null,
-      "acuityTypeId": 83305390
+      "acuityTypeId": null
     }
   ],
   "listCardItems": [
