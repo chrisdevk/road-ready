@@ -26,7 +26,7 @@ export function generateMetadata(): Metadata {
       siteName: "RoadReady Driving School",
       images: [
         {
-          url: "https://roadreadyvegas.com/images/hero-img.jpg",
+          url: "https://roadreadyvegas.com/images/hero-img.webp",
           width: 1200,
           height: 630,
           alt: "RoadReady Driving School",
@@ -40,7 +40,7 @@ export function generateMetadata(): Metadata {
       title: "RoadReady Driving School",
       description:
         "Las Vegas Driving School - Our DMV-certified instructors help you become a skilled and responsible driver by offering tailored behind-the-wheel lessons",
-      images: ["https://roadreadyvegas.com/images/hero-img.jpg"],
+      images: ["https://roadreadyvegas.com/images/hero-img.webp"],
     },
   };
 }
