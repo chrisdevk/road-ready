@@ -82,7 +82,7 @@ export const CardGrid = ({ packages }: { packages: Package[] }) => {
                     ? item.name === "Car Rental Only"
                       ? "Call us: (702) 747-5998"
                       : "Book Now"
-                    : "Unavailable"}
+                    : "Call us: (702) 747-5998"}
                 </Button>
               </CardAction>
             </Card>

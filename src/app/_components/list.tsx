@@ -34,7 +34,7 @@ export const List = ({ listItems }: ListProps) => {
         <ListSection
           items={listItems.slice(0, 3)}
           imageSrc="/images/vegas-road.jpg"
-          imageAlt="Why Choose RoadReady Driving School?"
+          imageAlt="Las Vegas road view for driving lessons"
           imagePosition="right"
           imageClasses="rounded-br-2xl rounded-tl-2xl object-cover z-10 ml-4 mt-4"
           overlayClasses="absolute left-0 top-0 size-full bg-sand rounded-2xl"
