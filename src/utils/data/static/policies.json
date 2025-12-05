@@ -1,44 +1,44 @@
 {
   "policies": [
     {
-      "heading": "Package Payment Policy",
-      "subheading": "All packages require full payment for the entire package before scheduling. You can register, pay and schedule online, or call our office (702) 747-5998 to pay, register and schedule over the phone if you prefer."
+      "heading": "Payment & Scheduling Policy",
+      "subheading": "All driving lessons and packages must be paid in full before scheduling. You may book and pay online, or contact our office at (702) 747-5998 for assistance with registration and scheduling."
     },
     {
       "heading": "Refund Policy",
-      "subheading": "If a refund is requested after lessons or packages are purchased, there is a $40 administrative fee to process the refund. No refunds are issued after six month from the date of purchase. Refunds take 5-10 business days for processing."
+      "subheading": "RoadReady Driving School may issue refunds under the following conditions: A $40 administrative fee applies to all approved refunds. Refund requests must be submitted within six (6) months of the date of purchase. Refunds are processed within 5–10 business days. No refunds are issued for unused lessons after the six-month expiration period."
     },
     {
-      "heading": "Lessons Cancellation",
-      "subheading": "24 hours notice is required to cancel a driving lesson without penalty. If you cancel with less than 24 hours notice but no later than 3 hours before your lesson, there will be a $80 charge for rescheduling."
+      "heading": "Lesson Cancellation Policy",
+      "subheading": "To avoid a fee, lesson cancellations must be made at least 24 hours before the scheduled start time. Cancellations made less than 24 hours but at least 3 hours before the lesson are subject to an $80 short-notice rescheduling fee. Cancellations made within 3 hours of the lesson are considered a late cancellation and treated as a forfeited lesson."
     },
     {
       "heading": "Lateness Policy",
-      "subheading": "If you arrive late, up to 15 minutes past the start time, the lesson will still end at the scheduled stop time."
+      "subheading": "If a student arrives within 15 minutes after the scheduled start time, the lesson will still end at the originally scheduled time. If arrival is more than 15 minutes late without notice, the lesson is considered a no-show."
     },
     {
       "heading": "No-Show Policy",
-      "subheading": "If you are more than 15 minutes late without prior notice, the lesson will be considered a no-show. No rescheduling or refund will be provided, and the lesson is forfeited."
+      "subheading": "A no-show results in the lesson being forfeited with no refund or rescheduling. A lesson is considered a no-show if: the student arrives more than 15 minutes late, or the student cancels with less than 3 hours' notice, or the student is not present at the pickup location at the scheduled time."
     },
     {
-      "heading": "Permit/License Requirements",
-      "subheading": "If you do not have a valid Nevada Learner's Permit, Driver's License or International License in your possession at the time of the lesson, the lesson cannot be given. There will be a $80 charge for the lesson to be rescheduled."
+      "heading": "Permit or License Requirements",
+      "subheading": "Students must have a valid Nevada Instruction Permit, Driver's License, or International License in their possession at the time of the lesson. If the student does not have the required permit/license at the start of the lesson: the lesson cannot be conducted, the session is forfeited, and an $80 rescheduling fee applies."
     },
     {
-      "heading": "Please Note",
-      "subheading": "Late cancellations or lessons cancelled due to no-show or no permit/license result in a loss of income to instructors and our driving school that cannot be recovered otherwise."
+      "heading": "Instructor Time & Operational Costs",
+      "subheading": "Last-minute cancellations, no-shows, and missing permit/documentation result in lost instructional time and operational costs that cannot be recovered. These policies ensure fairness and compensate instructors for reserved lesson time."
     },
     {
       "heading": "Certificate of Completion",
-      "subheading": "After 3 lessons/6 hours of behind-the-wheel driving lessons are completed, RoadReady Driving School will issue a Certificate of Completion. This may be helpful with car insurance; check with your provider."
+      "subheading": "After completing a minimum of 3 lessons (6 hours) of behind-the-wheel instruction, students may request a Certificate of Completion. This certificate may qualify for an auto-insurance discount; eligibility varies by provider."
     },
     {
-      "heading": "Prices",
-      "subheading": "Prices are effective at the time of purchase. Prices are subject to change without notice."
+      "heading": "Package Expiration",
+      "subheading": "All packages must be used within six (6) months of the purchase date. Unused hours expire after six months and are non-refundable."
     },
     {
-      "heading": "Expiration",
-      "subheading": "All packages expire six months from the date of purchase."
+      "heading": "Pricing",
+      "subheading": "Rates are valid at the time of purchase. Prices may change without prior notice."
     }
   ]
 }

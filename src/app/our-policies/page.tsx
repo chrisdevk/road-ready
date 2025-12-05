@@ -18,7 +18,7 @@ export default function OurPoliciesPage() {
     <>
       <PageHero
         heading="Our Policies"
-        subheading="Please read our policies, which apply to the driver training services offered by RoadReady Driving  School. <br/>By using our services, you agree to these terms and conditions."
+        subheading="Please review the policies below. These terms apply to all behind-the-wheel lessons and packages offered by RoadReady Driving School. By booking or attending a lesson, you agree to these policies."
         color="black"
       />
       <Container className="flex flex-col gap-y-12 my-20 lg:my-40">
