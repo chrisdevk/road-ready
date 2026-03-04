@@ -17,11 +17,28 @@ export const CardGrid = ({ packages }: { packages: Package[] }) => {
 
   if (!packages || !packages.length) return null;
 
+  const handleClick = (item: Package) => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "package_book_click", {
+        send_to: "AW-17681394810/CPMWCMmyuf4bEPryku9B",
+        event_category: "booking",
+        event_label: item.name,
+        value: item.price,
+      });
+    }
+
+    open({
+      appointmentTypeId: (item as any).acuityTypeId, // different per card
+      priceId: (item as any).stripePriceId, // different per card
+      name: item.name,
+    });
+  };
+
   return (
     <div className="grid grid-cols-12 gap-y-10 md:gap-x-10">
       {packages.map((item) => {
         const canBook = Boolean(
-          (item as any).acuityTypeId || (item as any).stripePriceId
+          (item as any).acuityTypeId || (item as any).stripePriceId,
         );
 
         return (
@@ -29,7 +46,7 @@ export const CardGrid = ({ packages }: { packages: Package[] }) => {
             key={item.name}
             className={cn(
               "col-span-12 md:col-span-6 lg:col-span-4 pl-5 pt-5 rounded-2xl shadow-sm",
-              item.highlight ? "bg-black" : "bg-sand"
+              item.highlight ? "bg-black" : "bg-sand",
             )}
           >
             <Card className="size-full rounded-bl-none rounded-tr-none rounded-br-2xl shadow-none border-0 gap-y-2.5">
@@ -70,13 +87,7 @@ export const CardGrid = ({ packages }: { packages: Package[] }) => {
                   type="button"
                   className="w-full"
                   disabled={!canBook}
-                  onClick={() =>
-                    open({
-                      appointmentTypeId: (item as any).acuityTypeId, // different per card
-                      priceId: (item as any).stripePriceId, // different per card
-                      name: item.name,
-                    })
-                  }
+                  onClick={() => handleClick(item)}
                 >
                   {canBook
                     ? item.name === "Car Rental Only"
