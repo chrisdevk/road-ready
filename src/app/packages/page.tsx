@@ -83,7 +83,7 @@ export default async function PackagesPage() {
       />
       <Callout
         heading="Not Sure Where to Start?"
-        subheading="Start with our $99 Trial Lesson <br /> Check your current level and get expert <br class='md:hidden' /> guidance for your training plan"
+        subheading="Start with our $120 Trial Lesson <br /> Check your current level and get expert <br class='md:hidden' /> guidance for your training plan"
         color="primary"
         buttonVariant="modal"
       />

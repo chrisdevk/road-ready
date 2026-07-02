@@ -30,7 +30,7 @@ export const TrialSection = ({ trialAccordionItems }: TrialSectionProps) => {
             </p>
           </div>
           <BookingModalClient
-            buttonText="Trial Lesson $99"
+            buttonText="Trial Lesson $120"
             appointmentTypeId={83262547}
           />
         </Container>

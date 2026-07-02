@@ -43,7 +43,7 @@ export const Callout = ({
         {!!subheading && <p dangerouslySetInnerHTML={{ __html: subheading }} />}
         {buttonVariant === "modal" ? (
           <BookingModalClient
-            buttonText={buttonText ?? "Trial Lesson $99"}
+            buttonText={buttonText ?? "Trial Lesson $120"}
             appointmentTypeId={appointmentTypeId}
             name={name}
             buttonVariant={color === "primary" ? "secondary" : "default"}
