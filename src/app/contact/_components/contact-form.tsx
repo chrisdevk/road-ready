@@ -15,10 +15,15 @@ import { Textarea } from "@/components/ui/textarea";
 import { contactFormSchema } from "@/lib/schemas/form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowUpRight } from "lucide-react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
+type SubmitStatus = "idle" | "success" | "error";
+
 export const ContactForm = () => {
+  const [status, setStatus] = useState<SubmitStatus>("idle");
+
   const form = useForm<z.infer<typeof contactFormSchema>>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -30,9 +35,28 @@ export const ContactForm = () => {
     },
   });
 
-  const onSubmit = (data: z.infer<typeof contactFormSchema>) => {
-    console.log(data);
+  const onSubmit = async (data: z.infer<typeof contactFormSchema>) => {
+    setStatus("idle");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) {
+        setStatus("error");
+        return;
+      }
+
+      setStatus("success");
+      form.reset();
+    } catch {
+      setStatus("error");
+    }
   };
+
+  const isSubmitting = form.formState.isSubmitting;
 
   return (
     <Container as="section" className="mt-20 md:mt-40 max-w-3xl mx-auto">
@@ -106,8 +130,20 @@ export const ContactForm = () => {
               )}
             />
           </div>
-          <Button type="submit">
-            Send Message <ArrowUpRight />
+
+          {status === "success" && (
+            <p className="text-sm text-green-600">
+              Message sent! We&apos;ll be in touch soon.
+            </p>
+          )}
+          {status === "error" && (
+            <p className="text-sm text-red-600">
+              Something went wrong. Please try again or email us directly.
+            </p>
+          )}
+
+          <Button type="submit" disabled={isSubmitting}>
+            {isSubmitting ? "Sending…" : "Send Message"} <ArrowUpRight />
           </Button>
         </form>
       </Form>
