@@ -6,4 +6,5 @@ export interface Package {
   fullPrice: number | null;
   savings: number | null;
   highlight: string | null;
+  acuityTypeId: string | null;
 }

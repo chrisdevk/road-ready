@@ -90,9 +90,9 @@ export const CardGrid = ({ packages }: { packages: Package[] }) => {
                   onClick={() => handleClick(item)}
                 >
                   {canBook
-                    ? item.name === "Car Rental Only"
-                      ? "Call us: (702) 747-5998"
-                      : "Book Now"
+                    ? item.acuityTypeId
+                      ? "Book Now"
+                      : "Call us: (702) 747-5998"
                     : "Call us: (702) 747-5998"}
                 </Button>
               </CardAction>

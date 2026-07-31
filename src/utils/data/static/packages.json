@@ -52,8 +52,8 @@
       "fullPrice": 1400,
       "savings": 250,
       "highlight": "Smart Choice",
-      "acuityTypeId": 85671954,
-      "stripePriceId": "price_1S5zhfDIurqktwE4nvTDeRmc"
+      "acuityTypeId": null,
+      "stripePriceId": null
     },
     {
       "name": "Road Warrior",
@@ -63,8 +63,8 @@
       "fullPrice": 3500,
       "savings": 1010,
       "highlight": null,
-      "acuityTypeId": 85672009,
-      "stripePriceId": "price_1S5zj5DIurqktwE4dqDV9fLm"
+      "acuityTypeId": null,
+      "stripePriceId": null
     }
   ],
   "listCardItems": [
