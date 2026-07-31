@@ -17,6 +17,12 @@ export const CardGrid = ({ packages }: { packages: Package[] }) => {
 
   if (!packages || !packages.length) return null;
 
+  const getSavings = (item: Package) => {
+    if (typeof item.savings === "number") return item.savings;
+    if (typeof item.fullPrice === "number") return item.fullPrice - item.price;
+    return null;
+  };
+
   const handleClick = (item: Package) => {
     if (typeof window !== "undefined" && (window as any).gtag) {
       (window as any).gtag("event", "package_book_click", {
@@ -40,6 +46,7 @@ export const CardGrid = ({ packages }: { packages: Package[] }) => {
         const canBook = Boolean(
           (item as any).acuityTypeId || (item as any).stripePriceId,
         );
+        const savings = getSavings(item);
 
         return (
           <div
@@ -69,6 +76,11 @@ export const CardGrid = ({ packages }: { packages: Package[] }) => {
                   className="text-sm"
                   dangerouslySetInnerHTML={{ __html: item.description }}
                 />
+                {savings && savings > 0 && (
+                  <p className="text-sm">
+                    You save ${savings}
+                  </p>
+                )}
               </CardContent>
 
               <CardFooter className="flex items-end gap-x-2.5 mt-auto">
